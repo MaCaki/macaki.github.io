@@ -1,0 +1,6 @@
+
+I do research in combinatorial optimization and machine learning.  
+My mathematical work deals with a class of polytopes related to classical root systems and submodular set functions. More broadly I am interested in combinatorics and discrete geometry. 
+
+I also develop machine learning algorithms for medical applications.  Currently I am interested in training convolutional neural networks to detect infections in eyes using noisy images. 
+

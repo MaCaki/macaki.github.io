@@ -9,15 +9,35 @@ gems: [jekyll-paginate]
 port: 3000
 safe: true
 
+# use collections to store resume data
+
+collections:
+  - projects
+  - work_history
+  - content
+
+# pandoc stuff
+  pandoc:
+  skip: false
+  impose: false
+  output: ./tmp
+  flags: '--smart --bibliography=ref.bib'
+  site_flags: '--toc'
+  outputs:
+    pdf: '--latex-engine=latex'
+    epub:
+    markdown:
+
+
 
 # edit here to achieve your personal greatness
 url: http://macaki.github.io/
-baseurl: 
+baseurl: /
 title: Matthew Cadier Kim
 author: Matthew Cadier Kim
 description: Personal site and cv
 avatar: hex_art.png
-email:  m.cadier.kim@gmail.com
+email:  m (dot) cadier (dot) kim (at) gmail (dot) com 
 github: macaki # username
 twitter: 
 linkedin: matthew-kim-98406427

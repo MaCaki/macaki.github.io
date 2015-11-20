@@ -1,0 +1,11 @@
+  
+{ 
+	"1":{
+		"name":"Markov models for fraud", 
+		"company":"Argyle Data",
+		"desc": "Researching, implementing, and testing hidden Markov models for fraud detection in a telecommunications network. After data exploration, we trained a model for sequential data to make a one-class classifier for anomaly detection. "
+	}
+
+}
+
+  

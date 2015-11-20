@@ -2,15 +2,93 @@
 layout: home
 ---
 
+<section id="home">
+	<div class = "container">
+		<div class="landingbg">
+			
+			  <div class="avatar">
+				<img class="img-circle" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="cool image">
+			  </div>
+
+			  <h3>  I am <strong>Matt Kim</strong>.  I teach and study mathematics and develop machine learning algorithms</h3>
+		
+		</div>
+
+	</div>
+</section>
+
 <section id="about">
+	<div class = "container">
+	  	<h3 align = "left "> in short </h3>
+	  
+	    <h4 align="left"> 	
+	     {% for c in site.content %} 
+	     	{% if c.name == "current_about" %}
+	     		{{c.content}}
+	     	{% endif %}
+	 	{% endfor %}
+	 	</h4>
+	</div>
+</section>
+
+
+<section id="work">
 	<div class="container">
-	  <div class="avatar">
-		<img class="img-circle" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="Responsive image">
-	  </div>
-	  <h3>You've found <strong>{{ site.author }}</strong>, graduate student in mathematics and researcher in machine learning and computer vision.</h3>
-	  <h3>I'm currently working on research in combinatorial optimization and discrete geometry.  At UCSF I build tools to help ophthamologists detect eye diseases in images taken in the field. This semester I'm a lecturer in mathematics at SFSU.  </h3>
-	  <h3>For more check out my academic &amp; professional <a href="http://biomadeira.github.io/vitae">Resume</a>.</h3>
-	  <h3>Contact me at <a href="mailto:{{ site.email }}">email</a>.</h3>
-	  {% include social.html %}
+
+  	<h3 align = "left "> projects </h3>
+	  	<div class="panel panel-default">
+			<div class="panel-body">
+
+				{% for project in site.projects  %}
+
+					<p> <strong> {{ project.name }} </strong> at {{project.company}} 
+					<br>
+					{{ project.description }} </p>
+
+				{% endfor %}
+
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section id="cv">
+	<div class="container">
+
+  	<h3 align = "left "> curriculum vitae</h3>
+	  	<div class="panel panel-default">
+			<div class="panel-body">
+
+			
+
+				<h4>Employment</h4>
+
+					{% for work in site.work_history  %}
+				    <article>
+				        <header>
+				            <h4> {{work.title}} </h4>
+				            <span><address>{{work.location}}</address><time>{{work.period}}</time></span>
+				        </header>
+
+				        <p> {{ work.description }} </p>
+				    </article>
+				    {% endfor %}
+				
+
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+<section id="contact">
+	<div class = "container">
+	 	<h3>Contact me at: {{ site.email }} </h3>
+		  {% include social.html %}
 	</div>
 </section>

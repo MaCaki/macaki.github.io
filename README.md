@@ -7,3 +7,5 @@ Add UCSF project
 Add Argyle work
 Add Math conferences
 Add papers
+
+Add medium blog
