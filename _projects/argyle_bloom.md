@@ -1,5 +1,5 @@
 ---
-layout: layout
+layout: content
 
 number : 2
 name: "Counting bloom filter for spam detection"

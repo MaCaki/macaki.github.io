@@ -221,6 +221,12 @@ article > header > h1 {
     color: inherit;
 }
 
+
+
+.cv-titles {
+    color: #b36b00;
+}
+
 article > header > span + span {
     margin-left: 2px;
 }

@@ -1,5 +1,5 @@
 ---
-layout: layout
+layout: content
 
 name: "Hidden Markov models for fraud"
 number: 3

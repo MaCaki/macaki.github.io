@@ -17,6 +17,8 @@ collections:
   - work_history
   - content
   - projects 
+  - papers
+  - education
 
 # pandoc stuff
 pandoc:

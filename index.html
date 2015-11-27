@@ -10,7 +10,7 @@ layout: home
 				<img class="img-circle" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="cool image">
 			  </div>
 
-			  <h3>  I am <strong>Matt Kim</strong>.  I teach and study mathematics and develop machine learning algorithms</h3>
+			  <h3>  I am <strong>Matthew Kim</strong>.  I teach and study mathematics and develop machine learning algorithms</h3>
 		
 		</div>
 
@@ -54,6 +54,8 @@ layout: home
 </section>
 
 
+<!--   CV stuff   -->  
+
 <section id="cv">
 	<div class="container">
 
@@ -63,20 +65,60 @@ layout: home
 
 			
 
-				<h4>Employment</h4>
+				<h4>work</h4>
 
-					{% for work in site.work_history  %}
+					{% for job in site.work_history  %}
 				    <article>
 				        <header>
-				            <h4> {{work.title}} </h4>
-				            <span><address>{{work.location}}</address><time>{{work.period}}</time></span>
+				            <h5> {{job.title}} </h5>
+				            <span><address>{{job.location}} </address> <time>{{job.period}}</time> <br> supervisor: {{ job.supervisor }}</span>
 				        </header>
 
-				        <p> {{ work.description }} </p>
+				        <p> {{ job.description }} </p>
 				    </article>
 				    {% endfor %}
-				
 
+
+				  <h4> conferences </h4>
+
+
+
+				  <h4> papers </h4>
+				  	{% for paper in site.papers  %}
+
+					    <article>
+					            <p> <a href="{{paper.url}}"> <strong> {{ paper.title }} </strong> </a>, 
+					            	{{ paper.year }},
+					            	{% if paper.coauthors %}
+					            		with {{ paper.coauthors}},
+					            	{% endif %}
+					            	{% if paper.notes %}
+					            		({{ paper.notes }})
+					            	{% endif %}
+					            </p>
+					    </article>
+
+				    {% endfor %}
+
+				  <h4> education </h4>
+
+				    {% for edu in site.education  %}
+
+					    <article>
+					            <p>  <strong> {{ edu.institution }}, </strong>  
+					            	{{ edu.degree }},
+					            	{{ edu.subject }},
+					            	{{ edu.year }} 
+					            	{% if edu.notes %}  ({{ edu.notes }}) 	{% endif %}			            
+					            </p>
+					    </article>
+
+				    {% endfor %}
+
+
+				  <h4> languages </h4>
+				  English (native), French (fluent), Java, Python, Matlab, Julia
+				
 
 			</div>
 		</div>
