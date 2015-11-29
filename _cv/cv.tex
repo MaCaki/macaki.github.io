@@ -70,15 +70,13 @@ format: latex
   {% endfor %}
 
 
-
-
 \section{\sc Papers}
   \begin{tabular}{@{}p{5in}}
     \begin{list1}
       {% assign papers = site.papers | sort:'number' %}
       {% for paper in papers  %}
-        \item {\em {{paper.title}}}, {% if paper.coauthors %} with {{paper.coauthors}}, {% endif %} {{paper.year}}, ({{paper.notes}}) 
-
+        \item {\em {{paper.title}}}, {% if paper.coauthors %} with {{paper.coauthors}}, {% endif %} {{paper.year}}{% if paper.notes %}, ({{paper.notes}}) {% endif %} 
+      \vspace{.2em}
       {% endfor %}
     \end{list1}
   \end{tabular}
