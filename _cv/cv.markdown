@@ -1,7 +1,0 @@
----
-
-layout: cv-tex
-
-content: 
-
----

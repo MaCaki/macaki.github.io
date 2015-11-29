@@ -22,20 +22,16 @@ layout: home
 	  	<h3 align = "left "> in short </h3>
 	  
 	    <h4 align="left"> 	
-	     {% for c in site.content %} 
-	     	{% if c.name == "current_about" %}
-	     		{{c.content}}
-	     	{% endif %}
-	 	{% endfor %}
+  			{{ site.content | where:"name","current_about" }}
 	 	</h4>
 	</div>
 </section>
 
 
-<section id="work">
+<section id="projects">
 	<div class="container">
 
-  	<h3 align = "left "> projects </h3>
+  	<h3 align = "left "> selected projects </h3>
 	  	<div class="panel panel-default">
 			<div class="panel-body">
  
@@ -56,69 +52,15 @@ layout: home
 
 <!--   CV stuff   -->  
 
+
 <section id="cv">
 	<div class="container">
 
-  	<h3 align = "left "> curriculum vitae</h3>
+  	<h3 align = "left "> curriculum vitae  <a href="/_cv/cv_tmp.pdf">  (pdf) </a></h3>
 	  	<div class="panel panel-default">
 			<div class="panel-body">
-
 			
-
-				<h4>work</h4>
-
-					{% for job in site.work_history  %}
-				    <article>
-				        <header>
-				            <h5> {{job.title}} </h5>
-				            <span><address>{{job.location}} </address> <time>{{job.period}}</time> <br> supervisor: {{ job.supervisor }}</span>
-				        </header>
-
-				        <p> {{ job.description }} </p>
-				    </article>
-				    {% endfor %}
-
-
-				  <h4> conferences </h4>
-
-
-
-				  <h4> papers </h4>
-				  	{% for paper in site.papers  %}
-
-					    <article>
-					            <p> <a href="{{paper.url}}"> <strong> {{ paper.title }} </strong> </a>, 
-					            	{{ paper.year }},
-					            	{% if paper.coauthors %}
-					            		with {{ paper.coauthors}},
-					            	{% endif %}
-					            	{% if paper.notes %}
-					            		({{ paper.notes }})
-					            	{% endif %}
-					            </p>
-					    </article>
-
-				    {% endfor %}
-
-				  <h4> education </h4>
-
-				    {% for edu in site.education  %}
-
-					    <article>
-					            <p>  <strong> {{ edu.institution }}, </strong>  
-					            	{{ edu.degree }},
-					            	{{ edu.subject }},
-					            	{{ edu.year }} 
-					            	{% if edu.notes %}  ({{ edu.notes }}) 	{% endif %}			            
-					            </p>
-					    </article>
-
-				    {% endfor %}
-
-
-				  <h4> languages </h4>
-				  English (native), French (fluent), Java, Python, Matlab, Julia
-				
+			{{ site.cv | where: "format","html" }}
 
 			</div>
 		</div>

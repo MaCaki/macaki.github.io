@@ -1,0 +1,65 @@
+---
+layout: content
+format: html
+---
+
+<h4>work</h4>
+
+	{% assign jobs = site.work_history | sort: 'number' %}
+  {% for job in jobs  %}
+    <article>
+        <header>
+            <h5> <strong>{{job.title}}</strong> at {{job.company}} </h6>
+            <span>  <address>{{job.location}} </address> <time>{{job.period}}</time> <br> supervisor: {{ job.supervisor }}</span>
+        </header>
+
+        <p> {{ job.description }} </p>
+    </article>
+    {% endfor %}
+
+
+ <h4> conferences </h4>
+
+
+
+
+
+
+  <h4> papers </h4>
+    {% assign papers = site.papers | sort:'number' %}
+  	{% for paper in papers  %}
+
+	    <article>
+	            <p> <a href="{{paper.url}}"> <strong> {{ paper.title }} </strong> </a>, 
+	            	{{ paper.year }},
+	            	{% if paper.coauthors %}
+	            		with {{ paper.coauthors}},
+	            	{% endif %}
+	            	{% if paper.notes %}
+	            		({{ paper.notes }})
+	            	{% endif %}
+	            </p>
+	    </article>
+
+    {% endfor %}
+
+  <h4> education </h4>
+
+    {% assign education = site.education | sort:'number' %}
+    {% for edu in education %}
+	    <article>
+	            <p>  <strong> {{ edu.institution }}, </strong>  
+	            	{{ edu.degree }},
+	            	{{ edu.subject }},
+	            	{{ edu.year }} 
+	            	{% if edu.notes %}  ({{ edu.notes }}) 	{% endif %}			            
+	            </p>
+	    </article>
+
+    {% endfor %}
+
+
+  <h4> languages </h4>
+  English (native), French (fluent), Java, Python, Matlab, Julia
+
+
