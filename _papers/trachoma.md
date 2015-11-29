@@ -1,9 +1,9 @@
 ---
-layout: content
+layout: paper
 number: 2
-title: Using Transfer learning from Convolutional Neural Networks to learn features to for detection of Trachoma
+title: Transfer learning from Convolutional Neural Networks for features to classify Trachoma infection
 url: 
 year: 2015
-coauthors: Porco, Travis and Okada, Kazunori
+coauthors: Dr. Travis Porco and Dr. Kazunori Okada
 notes: in progress
 ---
