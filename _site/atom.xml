@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  
+    <title type="text" xml:lang="en">Matthew Cadier Kim</title>
+    <link type="application/atom+xml" rel="self" href="http://macaki.github.io//atom.xml"/>
+  
+  <link href="http://macaki.github.io//"/>
+  <id>http://macaki.github.io//</id>
+  <updated>2015-11-28T20:36:30Z</updated>
+  <author>
+    <name>Matthew Cadier Kim</name>
+    <email>m (dot) cadier (dot) kim (at) gmail (dot) com</email>
+  </author>
+  <rights type="text">Copyright © 2015 Matthew Cadier Kim. All rights reserved.</rights>
+  
+  <entry>
+  <title type="text">Test</title>
+  <link rel="alternate" type="text/html" href="http://macaki.github.io//test.html" />
+  <id>http://macaki.github.io//test</id>
+  <published>2015-11-27T00:00:00Z</published>
+  <updated>2015-11-27T00:00:00Z</updated>
+  <content type="html"><![CDATA[ <p>This is my first post.</p>
+ ]]></content>
+</entry>
+
+
+
+</feed>

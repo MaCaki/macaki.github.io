@@ -1,0 +1,137 @@
+\documentclass[margin,line,pifont,palatino,courier]{res}
+
+\usepackage{pifont}
+\usepackage{hyperref}
+\usepackage[latin1] { inputenc}
+\textheight=9.0in
+\addtolength{\topmargin}{-0.5in}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\rfoot{ {\footnotesize Curriculum Vitae, Matthew Cadier Kim, \thepage} }
+
+
+\newenvironment{list1}{
+  \begin{list}{\label{ } }{
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.0in} } }{\end{list} }
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in} } }{\end{list} }
+
+\begin{document}
+
+\name{Matthew Cadier Kim \vspace*{.1in} }
+
+
+\begin{resume}
+
+
+%%%%%%%%%    Contact information   %%%%%%%%%%%
+
+
+\begin{flushright}
+{\small
+Thorton Hall 912, 1600 Holloway Ave, San Francisco, CA 94132 \\
+1 (415) 767-8984\\
+% \url{thecity.sfsu.edu/~mcadier} \\
+  \verb+m.cadier.kim@gmail.com+
+}
+\end{flushright}
+ 
+\section{\sc  About Me}
+  I do research in combinatorial optimization and machine learning.  My mathematical work deals with a class of polytopes related to classical root systems and submodular set functions. More broadly I am interested in algebraic combinatorics and discrete geometry.  I also build machine learning algorithms for medical applications.  Currently I am interested applications of convolutional neural networks to eye diseases.
+
+
+\section{\sc  Work History}
+  
+  
+    \employer{ UCSF Proctor Foundation }
+    \title{ Researcher in Machine Vision  }
+    \location{  San Francisco, CA   }
+    \dates{ May, 2015 - present }
+
+    \begin{position}
+    We recieved a grant to investigate machine learning algorithms to classify images of eyelids. I worked under the lead biostatistician to develop a grading algorithm according to WHO guidlines for identifying trachoma infection.
+    \end{position}
+  
+    \employer{ San Francisco State University }
+    \title{ Lecturer in Mathematics  }
+    \location{  San Francisco, CA   }
+    \dates{ September, 2014 - December, 2015 }
+
+    \begin{position}
+    I have been the principal instructor for several sections of college algebra and precalculus.  I helped develop and administer a large online calculus coursef for 200+ students each semester. 
+    \end{position}
+  
+    \employer{ Argyle Data }
+    \title{ Data Science Associate  }
+    \location{  San Mateo, CA   }
+    \dates{ June, 2014 - February, 2015 }
+
+    \begin{position}
+    I worked alongside the senior software engineer to research, prototype, and develop machine learning and statistical algorithms for fraud detection.
+    \end{position}
+  
+
+
+\section{\sc Papers}
+  \begin{tabular}{@{}p{5in}}
+    \begin{list1}
+      
+      
+        \item {\em A Characterization of Generalized Permutohedra for the Classical Reflection Groups},  2015, (thesis)  
+      \vspace{.2em}
+      
+        \item {\em Transfer learning from Convolutional Neural Networks for features to classify Trachoma infection},  with Dr. Travis Porco and Dr. Kazunori Okada,  2015, (in progress)  
+      \vspace{.2em}
+      
+    \end{list1}
+  \end{tabular}
+
+
+\section{\sc Education} 
+  %\vspace*{-.1in}
+  \begin{list1}
+    
+    
+        \item  {\bf SFSU:}\textbf{ MA }, Mathematics, 2015
+
+          
+    
+        \item  {\bf SFSU:}\textbf{ BA }, Philosophy, Mathematics, 2012
+
+          
+    
+        \item  {\bf University of Paris 1:}\textbf{ Visiting Student }, Philosophy, Logic, Mathematics, 2009-2011
+
+          
+    
+
+  \end{list1}
+
+
+\section{\sc Programming\\ Languages}
+
+  \begin{tabular}{@{}p{6in}p{3in}}
+
+     English  French (Fluent)  Java  Python  Matlab  Julia 
+
+  \end{tabular}
+
+
+
+\end{resume}
+
+
+
+\end{document}
+
