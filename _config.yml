@@ -13,28 +13,13 @@ safe: false
 
 
 # use collections to store resume data
-
-
-
 collections:
+  - cv
   - work_history
   - content
   - projects 
   - papers
   - education
-  - cv
-
-# pandoc stuff
-pandoc:
-  skip: false
-  impose: true
-  output_dir: ./pdfs
-  flags: '--smart --bibliography=ref.bib'
-  site_flags: '--toc'
-  outputs: pdf
-  pdf: '--latex-engine=latex'
-  epub:
-  markdown:
 
 
 

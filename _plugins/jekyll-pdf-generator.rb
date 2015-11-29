@@ -19,26 +19,28 @@ class PdfCVGenerator < Generator
     latex_cv_file_path = cv.path
     latex_cv_content = (Liquid::Template.parse(cv.content)).render(site.site_payload)
 
-    tmp_file_dir = latex_cv_file_path.chomp('cv.tex')
-    tmp_file_path = latex_cv_file_dir + 'cv_tmp.tex'
-
     ## Write out a compileable .tex file to pass to 'pdflatex'
-    tmp_file = open(tmp_file_path, 'w')
+    out_dir = latex_cv_file_path.chomp('cv.tex') + '/out/'
+    cmd = 'mkdir ' + out_dir
+    Open3.pipeline(cmd)
+    tmp_filename_path = out_dir + 'cv_tmp.tex'
+
+    tmp_file = open(tmp_filename_path, 'w')
     tmp_file.write(latex_cv_content)
     tmp_file.close
 
-    cmd = "pdflatex " + "-output-directory=\"#{tmp_file_dir}\" " + " \"#{tmp_file_path}\""
+    cmd = "pdflatex " + "-output-directory=\"#{out_dir}\" " + " \"#{tmp_filename_path}\""
 
-    Open3.popen3(cmd) do |stdin, stdout, stderr, wait_thr|
-      pid   = wait_thr.pid 
-      stdout.gets
-      error = stderr.gets
-      exit  = wait_thr.value
-    end
+    # Open3.popen3(cmd) do |stdin, stdout, stderr, wait_thr|
+    #   pid   = wait_thr.pid 
+    #   stdout.gets
+    #   error = stderr.gets
+    #   exit  = wait_thr.value
+    # end
 
-    #Open3.pipeline(cmd)
+    Open3.pipeline(cmd)
 
-    site.static_files << StaticFile.new(site, base_dir, '_cv', "cv_tmp.pdf")
+    site.static_files << StaticFile.new(site, base_dir, '_cv/out/', "cv_tmp.pdf")
 
   end
 end
