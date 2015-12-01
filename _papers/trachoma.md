@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: content
 number: 2
 title: Transfer learning from Convolutional Neural Networks for features to classify Trachoma infection
 url: 

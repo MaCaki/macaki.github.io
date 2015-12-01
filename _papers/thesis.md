@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: content
 number: 1
 title: A Characterization of Generalized Permutohedra for the Classical Reflection Groups
 url: google.com
