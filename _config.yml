@@ -9,7 +9,7 @@ gems:
   - jekyll-paginate
 port: 3000
 safe: false
-exclude: _cv/out/
+exclude: _cv/out/*
 
 
 # use collections to store resume data

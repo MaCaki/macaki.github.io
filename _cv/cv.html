@@ -9,7 +9,7 @@ format: html
   {% for job in jobs  %}
     <article>
         <header>
-            <h5> <strong>{{job.title}}</strong> at {{job.company}} </h6>
+            <h5> <strong>{{job.title}}</strong> at {{job.company}} </h5>
             <span>  <address>{{job.location}} </address> <time>{{job.period}}</time> <br> supervisor: {{ job.supervisor }}</span>
         </header>
 
@@ -19,6 +19,13 @@ format: html
 
 
  <h4> conferences </h4>
+
+ {% assign conferneces = site.conferences | sort: 'number' %}
+  {% for conf in conferneces  %}
+    <article>
+        <p> <strong>{{conf.title}}</strong> at {{conf.location}}  <time>{{conf.year}}</time>. {{conf.role}}<\p> 
+    </article>
+    {% endfor %}
 
 
 
