@@ -28,8 +28,8 @@ require 'rubygems'
         system "git add ."
         system "git commit -am #{message.shellescape}"
         system "git push origin master"
-        system "git checkout working_source"
-        system "echo yolo"
+        system "git checkout working-source"
+        system "echo done publishing"
       end
     end
 
