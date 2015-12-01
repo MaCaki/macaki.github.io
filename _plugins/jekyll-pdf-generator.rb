@@ -27,14 +27,14 @@ class PdfCVGenerator < Generator
 
     cmd = "pdflatex " + "-output-directory=\"#{out_dir}\" " + " \"#{tmp_filename_path}\""
 
-    # Open3.popen3(cmd) do |stdin, stdout, stderr, wait_thr|
-    #   pid   = wait_thr.pid 
-    #   stdout.gets
-    #   error = stderr.gets
-    #   exit  = wait_thr.value
-    # end
+    Open3.popen3(cmd) do |stdin, stdout, stderr, wait_thr|
+      pid   = wait_thr.pid 
+      stdout.gets
+      error = stderr.gets
+      exit  = wait_thr.value
+    end
 
-    Open3.pipeline(cmd)
+    #Open3.pipeline(cmd)
 
     site.static_files << StaticFile.new(site, site.source, 'cv/', "cv_tmp.pdf")
 
