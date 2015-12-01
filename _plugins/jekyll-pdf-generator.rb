@@ -14,7 +14,7 @@ class PdfCVGenerator < Generator
     latex_cv_content = (Liquid::Template.parse(cv.content)).render(site.site_payload)
 
     ## Write out a compileable .tex file to pass to 'pdflatex'
-    out_dir = latex_cv_file_path.chomp('cv.tex') + 'out'
+    out_dir = latex_cv_file_path.chomp('_cv/cv.tex') + 'cv'
     cmd = 'mkdir ' + out_dir
     Open3.pipeline(cmd)
     tmp_filename_path = out_dir + '/cv_tmp.tex'
@@ -36,7 +36,7 @@ class PdfCVGenerator < Generator
 
     Open3.pipeline(cmd)
 
-    site.static_files << StaticFile.new(site, site.source, '_cv/out/', "cv_tmp.pdf")
+    site.static_files << StaticFile.new(site, site.source, 'cv/', "cv_tmp.pdf")
 
   end
 end
