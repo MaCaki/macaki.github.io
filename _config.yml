@@ -9,12 +9,13 @@ gems:
   - jekyll-paginate
 port: 3000
 safe: false
-exclude: _cv/out/*
+exclude: ['_cv/out/', 'README.md', 'res.cls' ]
 
 
 # use collections to store resume data
 collections:
   - cv
+  - conferences
   - work_history
   - content
   - projects 

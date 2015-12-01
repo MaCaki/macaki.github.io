@@ -20,12 +20,15 @@ format: html
 
  <h4> conferences </h4>
 
- {% assign conferneces = site.conferences | sort: 'number' %}
-  {% for conf in conferneces  %}
-    <article>
-        <p> <strong>{{conf.title}}</strong> at {{conf.location}}  <time>{{conf.year}}</time>. {{conf.role}}<\p> 
-    </article>
-    {% endfor %}
+   {% assign conferneces = site.conferences | sort: 'number' %}
+      {% for conf in conferneces  %}
+
+        <article>
+            <p>  <strong>{{conf.title}}</strong> at {{conf.institution}}, {{conf.location}}  <time>{{conf.year}}</time>:  {{conf.role}}
+            </p>
+             
+        </article>
+      {% endfor %}
 
 
 

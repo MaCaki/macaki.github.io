@@ -7,5 +7,5 @@ period: "May, 2015 - present"
 supervisor: Dr. Travis Porco
 title: "Researcher in Machine Vision"
 location: "San Francisco, CA"
-description: "We recieved a grant to investigate machine learning algorithms to classify images of eyelids. I worked under the lead biostatistician to develop a grading algorithm according to WHO guidlines for identifying trachoma infection."
+description: "We recieved a grant to investigate various machine learning approaches to classifying images of eyelids. I worked with the PI to define the direction of the project and develop a grading algorithm according to WHO guidlines for identifying trachoma infection."
 ---
