@@ -28,7 +28,7 @@ require 'rubygems'
         system "git add ."
         system "git commit -am #{message.shellescape}"
         system "git push origin master"
-        system "git checkout working-source"
+        system "git checkout working-source --force"
         system "echo done publishing"
       end
     end
