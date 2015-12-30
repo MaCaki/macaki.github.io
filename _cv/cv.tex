@@ -53,7 +53,12 @@ format: latex
 \end{flushright}
  
 \section{\sc  About Me}
-  {{ site.content | where:"name","current_about" }}
+    {% assign bios = site.about  %}
+      {% for bio in bios  %}
+          {% if bio.name == "eng_bio" %}
+            {{ bio.content }}
+          {% endif %}
+      {% endfor %}
 
 
 \section{\sc  Work History}

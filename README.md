@@ -9,3 +9,16 @@ This framework allows me to write content once, and have both an html and a clea
 
 ##note
 Since github only builds Jekyll sites in 'safe' mode, the site has to be build locally to generate the pdf. Also pdflatex has to be installed.     
+
+
+---
+
+##TODO
+
+* separate out teaching/tutoring info away from tech cv. 
+
+* Make front more oriented towards free lance.
+
+* Add academic work to the front.  
+
+* fix the CV bio content

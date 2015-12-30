@@ -11,4 +11,23 @@ jQuery(document).ready(function(e) {
     })
 });
 
+$(function () {
 
+    $("#toggle").click(function (event) {
+        event.preventDefault();
+        var target = $(this).attr("href");
+        $(target).toggleClass("hidden");
+    });
+
+});
+
+
+
+var trigger = document.getElementById('teaching-trigger'); //to toggle teaching panel
+
+trigger.addEventListener('click', function(e) {
+    e.preventDefault();
+    var id = trigger.getAttribute('href').replace("#", "");
+    var target = document.getElementById(id);
+    target.classList.toggle('hidden'); 
+});
