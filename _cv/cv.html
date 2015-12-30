@@ -69,7 +69,10 @@ format: html
     {% endfor %}
 
 
-  <h4> languages </h4>
-  English (native), French (fluent), Java, Python, Matlab, Julia
+  <h4> languages/tools </h4>
+    {% for lang in  site.languages %} {{ lang }} {% endfor %}
+    <br> working with:  <br>
+    {% for tool in  site.tools %} {{ tool }} {% endfor %}
+  
 
 

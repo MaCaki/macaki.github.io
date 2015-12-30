@@ -74,6 +74,16 @@ format: latex
     \end{position}
   {% endfor %}
 
+\section{\sc Languages/ \\ Tools}
+
+  \begin{tabular}{@{}p{6in}p{3in}}
+
+    {% for lang in  site.languages %} {{ lang }} {% endfor %}
+    \\working with: \ 
+    {% for tool in  site.tools %} {{ tool }} {% endfor %}
+
+  \end{tabular}
+
 
 \section{\sc Papers}
   \begin{tabular}{@{}p{5in}}
@@ -100,13 +110,7 @@ format: latex
   \end{list1}
 
 
-\section{\sc Programming\\ Languages}
 
-  \begin{tabular}{@{}p{6in}p{3in}}
-
-    {% for lang in  site.languages %} {{ lang }} {% endfor %}
-
-  \end{tabular}
 
 
 
