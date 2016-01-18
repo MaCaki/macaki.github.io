@@ -10,7 +10,8 @@ layout: home
 				<img class="img-circle" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="cool image">
 			  </div>
 
-			  <h3>  I am <strong>Matthew Kim</strong>.  I teach and study mathematics and develop machine learning algorithms</h3>
+			  <h3>  I am <strong>Matthew Kim</strong>. <br>
+			   tl;dr:  combinatorial optimization, polytopes, computer vision, machine learning, data science</h3>
 		
 		</div>
 
@@ -19,7 +20,7 @@ layout: home
 
 <section id="about">
 	<div class = "container">
-	  	<h3 align = "left "> in short </h3>
+	  	<h3 align = "left "> about </h3>
 	  
 	    <h4 align="left"> 	
   			{{ site.about | where:"name","eng_bio"}}
@@ -67,6 +68,27 @@ layout: home
 	</div>
 </section>
 
+
+
+
+<!--  Math stuff   -->  
+
+
+<section id="cv">
+	<div class="container">
+
+  	<h3 align = "left "> math  </h3>
+	  	<div class="panel panel-default">
+			<div class="panel-body">
+			
+			<h4 align="left"> 	
+  				{{ site.about | where:"name","math_bio"}}
+	 		</h4>
+
+			</div>
+		</div>
+	</div>
+</section>
 <!--   Teaching   -->  
 
 

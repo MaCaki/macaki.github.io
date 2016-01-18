@@ -29,8 +29,13 @@ class PdfCVGenerator < Generator
 
     #Open3.popen3(cmd) 
 
-    Open3.pipeline(cmd)
+    #Open3.pipeline(cmd)
 
+    Open3.popen2(cmd) {|stdin, stdout, wait_thr|
+      result = stdout.read # pid of the started process.
+      exit_status = wait_thr.value # Process::Status object returned.
+      p result
+    }
     site.static_files << StaticFile.new(site, site.source, 'assets/', "cv_compiled.pdf")
 
   end

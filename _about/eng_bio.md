@@ -2,4 +2,4 @@
 layout: content
 name: eng_bio
 ---
-I do research in combinatorial optimization and machine learning.  My mathematical work deals with a class of polytopes related to classical finite reflection groups and submodular set functions. More broadly I am interested in algebraic combinatorics and discrete geometry.  I also build machine learning algorithms for medical applications.  Currently I am interested in transfer learning and convolutional neural networks for medical images.
+I build machine vision software for medical applications. I also do research in combinatorial optimization, matroid theory and submodular functions, and I like to think about combinatorially inspired algorithms.  I am also interested in transfer learning and convolutional neural networks for small sample training sets of medical images.

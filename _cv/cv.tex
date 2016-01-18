@@ -90,7 +90,9 @@ format: latex
     \begin{list1}
       {% assign papers = site.papers | sort:'number' %}
       {% for paper in papers  %}
-        \item {\em {{paper.title}}}, {% if paper.coauthors %} with {{paper.coauthors}}, {% endif %} {{paper.year}}{% if paper.notes %}, ({{paper.notes}}) {% endif %} 
+        {% if paper.type == "paper" %}
+            \item {\em {{paper.title}}}, {% if paper.coauthors %} with {{paper.coauthors}}, {% endif %} {{paper.year}}{% if paper.notes %}, ({{paper.notes}}) {% endif %} 
+        {% endif %}
       \vspace{.2em}
       {% endfor %}
     \end{list1}
