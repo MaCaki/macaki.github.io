@@ -42,10 +42,12 @@ languages:
   - Python
   - Matlab
   - Julia  
+  - C++
 tools:
   - AWS
+  - OpenCV
   - Scikit-learn
-  - git
+
 
 avatar: hex_art.png
 github: macaki # username
