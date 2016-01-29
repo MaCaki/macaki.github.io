@@ -15,10 +15,10 @@ Since github only builds Jekyll sites in 'safe' mode, the site has to be build l
 
 ##TODO
 
-* separate out teaching/tutoring info away from tech cv. 
+* separate out teaching/tutoring info away from tech cv. `
 
-* Make front more oriented towards free lance.
+* Create Data-Science specific CV
 
-* Add academic work to the front.  
+* Create SE specific CV
 
-* fix the CV bio content
+* Create Academic specific CV 

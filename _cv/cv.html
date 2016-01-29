@@ -70,9 +70,10 @@ format: html
 
 
   <h4> languages/tools </h4>
-    {% for lang in  site.languages %} {{ lang }} {% endfor %}
-    <br> working with:  <br>
-    {% for tool in  site.tools %} {{ tool }} {% endfor %}
-  
+    <article>
+      {% for lang in  site.languages %} {{ lang }} {% endfor %}
+      <br> working with:  <br>
+      {% for tool in  site.tools %} {{ tool }} {% endfor %}
+    </article>
 
 
