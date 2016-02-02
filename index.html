@@ -51,6 +51,31 @@ layout: home
 </section>
 
 
+
+
+<section id="writing">
+	<div class="container">
+
+  	<h3 align = "left "> writing</h3>
+	  	<div class="panel panel-default">
+			<div class="panel-body">
+
+				{% for article in site.articles %}
+
+					<p><a href = {{article.url}}> <strong> {{article.title}} </strong>  </a>
+					<br>
+					{{article.summary}}  </p>
+
+				{% endfor %}
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
 <!--   CV stuff   -->  
 
 
