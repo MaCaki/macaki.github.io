@@ -15,10 +15,8 @@ Since github only builds Jekyll sites in 'safe' mode, the site has to be build l
 
 ##TODO
 
-* separate out teaching/tutoring info away from tech cv. `
+* work on layout of teaching section 
 
-* Create Data-Science specific CV
+* add graphics to the math portion. 
 
-* Create SE specific CV
-
-* Create Academic specific CV 
+* Search for and add page about generalized permutohedra. 
