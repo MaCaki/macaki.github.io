@@ -4,22 +4,19 @@ require 'open3'
 module Jekyll
 
 class PdfCVGenerator < Generator
-  def generate(site)
-    puts "Generating PDF"
 
-    cv = site.collections['cv'].docs.find { |c| c['format'] == 'latex' }
+  def compileCV(site, cv)
 
     ## Render the CV.tex template and get the content minus the Front Matter
     latex_cv_file_path = cv.path
-
     latex_cv_content = (Liquid::Template.parse(cv.content)).render(site.site_payload)
-
-
+    subject = cv['subject']
 
     ## Write out a compileable .tex file to pass to 'pdflatex'
-    out_dir = latex_cv_file_path.chomp('_cv/cv.tex') + 'assets/'
+    texfile_name = 'cv_' + subjet + '_compiled.tex'
+    out_dir = File.dirname(File.dirname(latex_cv_file_path)) + '/assets/'
 
-    tmp_filename_path =  latex_cv_file_path.chomp('cv.tex') + 'cv_compiled.tex'
+    tmp_filename_path =  File.dirname(latex_cv_file_path) + '/tmp/' + filename
 
     tmp_file = open(tmp_filename_path, 'w')
     tmp_file.write(latex_cv_content)
@@ -27,16 +24,24 @@ class PdfCVGenerator < Generator
 
     cmd = "pdflatex " + "-output-directory=\"#{out_dir}\" " + " \"#{tmp_filename_path}\""
 
-    #Open3.popen3(cmd) 
-
-    #Open3.pipeline(cmd)
-
     Open3.popen2(cmd) {|stdin, stdout, wait_thr|
       result = stdout.read # pid of the started process.
       exit_status = wait_thr.value # Process::Status object returned.
       p result
     }
+
+    outfile_name = texfile_name.chomp('tex') + 'pdf'
     site.static_files << StaticFile.new(site, site.source, 'assets/', "cv_compiled.pdf")
+  end
+
+  def generate(site)
+    puts "Generating PDF"
+
+    cv = site.collections['cv'].docs.find { |c| c['subjet'] == 'engineering' }
+    compileCV(site, cv)
+
+    cv = site.collections['cv'].docs.find { |c| c['subjet'] == 'teaching' }
+    compileCV(site, cv)
 
   end
 end
