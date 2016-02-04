@@ -1,6 +1,7 @@
 ---
 layout: content
 format: latex
+subject: teaching
 ---
 
 \documentclass[margin,line,pifont,palatino,courier]{res}
@@ -55,35 +56,23 @@ format: latex
 \section{\sc  About Me}
     {% assign bios = site.about  %}
       {% for bio in bios  %}
-          {% if bio.name == "eng_bio" %}
+          {% if bio.name == "teaching_bio_cv" %}
             {{ bio.content }}
           {% endif %}
       {% endfor %}
 
 
 \section{\sc  Work History}
-  {% assign jobs = site.work_history | sort: 'number' %}
-  {% for job in jobs  %}
-    \employer{ {{job.company}} }
-    \title{ {{job.title}}  }
-    \location{  {{job.location}}   }
-    \dates{ {{job.period}} }
-
-    \begin{position}
-    {{ job.description }}
-    \end{position}
-  {% endfor %}
-
-\section{\sc Languages/ \\ Tools}
-
-  \begin{tabular}{@{}p{6in}p{3in}}
-
-    {% for lang in  site.languages %} {{ lang }} {% endfor %}
-    \\working with: \ 
-    {% for tool in  site.tools %} {{ tool }} {% endfor %}
-
-  \end{tabular}
-
+\begin{tabular}{@{}p{5in}}
+  \begin{list1}
+    {% assign jobs = site.work_history | sort: 'number' %}
+    {% for job in jobs  %}
+       
+      \item {\bf {{job.title}} }:  {{job.company}} in {{job.location}}. {{job.period}}
+      \vspace{.2em}
+    {% endfor %}
+  \end{list1}
+\end{tabular}
 
 \section{\sc Papers}
   \begin{tabular}{@{}p{5in}}
@@ -93,6 +82,19 @@ format: latex
         {% if paper.type == "paper" %}
             \item {\em {{paper.title}}}, {% if paper.coauthors %} with {{paper.coauthors}}, {% endif %} {{paper.year}}{% if paper.notes %}, ({{paper.notes}}) {% endif %} 
         {% endif %}
+      \vspace{.5em}
+      {% endfor %}
+    \end{list1}
+  \end{tabular}
+
+
+
+\section{\sc Conferences}
+  \begin{tabular}{@{}p{5in}}
+    \begin{list1}
+    {% assign conferneces = site.conferences | sort: 'number' %}
+      {% for conf in conferneces  %}
+         \item  { {{conf.title}} }  at {{conf.institution}}, {{conf.location}}, {{conf.year}}:  {{conf.role}}
       \vspace{.2em}
       {% endfor %}
     \end{list1}
@@ -112,9 +114,27 @@ format: latex
   \end{list1}
 
 
+\section{\sc Teaching} 
+  %\vspace*{-.1in}
+  \begin{list1}
+    {% assign classes = site.classes | sort:'year' %}
+    {% for class in classes %}
+        \item  {\bf {{ class.name }}:}\textbf{ {{class.semester}}  },  {{ class.year}} at {{ class.school}}
+    {% endfor %}
+
+  \end{list1}
 
 
+\section{\sc Languages/ \\ Tools}
+  \begin{tabular}{@{}p{6in}p{3in}}
+    {% for lang in  site.languages %} {{ lang }} {% endfor %}
+  \end{tabular}
 
+\section{\sc Refernces}
+\begin{tabular}{@{}p{6in}p{3in}}
+    {% for ref in  site.references %} {{ ref }} \\ {% endfor %}
+  \end{tabular}
+   
 
 \end{resume}
 

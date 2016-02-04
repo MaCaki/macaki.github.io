@@ -48,6 +48,11 @@ tools:
   - AWS
   - OpenCV
   - Scikit-learn
+references:
+  - "Dr. David Bao, dbao@sfsu.edu, Chair of Math Dept."
+  - "Addie Evans, addieevans@gmail.com, Teaching supervisor"
+  - "Dr. Federico Ardila, federico@sfsu.edu, Academic Advisor"
+  - "Dr. Travis Porco, Travis.Porco@ucsf.edu, Research Supervisor"
 
 
 avatar: hex_art.png
