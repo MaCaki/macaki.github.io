@@ -13,10 +13,10 @@ class PdfCVGenerator < Generator
     subject = cv['subject']
 
     ## Write out a compileable .tex file to pass to 'pdflatex'
-    texfile_name = 'cv_' + subjet + '_compiled.tex'
+    texfile_name = 'cv_' + subject + '_compiled.tex'
     out_dir = File.dirname(File.dirname(latex_cv_file_path)) + '/assets/'
 
-    tmp_filename_path =  File.dirname(latex_cv_file_path) + '/tmp/' + filename
+    tmp_filename_path =  File.dirname(latex_cv_file_path) + '/tmp/' + texfile_name
 
     tmp_file = open(tmp_filename_path, 'w')
     tmp_file.write(latex_cv_content)
@@ -36,12 +36,12 @@ class PdfCVGenerator < Generator
 
   def generate(site)
     puts "Generating PDF"
+    @CVs = site.collections['cv'].docs.find_all { |c| c['format'] == 'latex' }
 
-    cv = site.collections['cv'].docs.find { |c| c['subjet'] == 'engineering' }
-    compileCV(site, cv)
-
-    cv = site.collections['cv'].docs.find { |c| c['subjet'] == 'teaching' }
-    compileCV(site, cv)
+    for cv in @CVs
+      puts cv['subject']
+      compileCV(site, cv)
+    end
 
   end
 end
