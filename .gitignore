@@ -1,4 +1,4 @@
 _site/
 .sass-cache
 resume_tex/*
-*compiled.tex
+_cv/tmp/*
