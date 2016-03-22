@@ -1,7 +1,7 @@
 ---
 layout: content
 
-number: 2
+number: 3
 company: "San Francisco State University"
 period: "September, 2014 - December, 2015"
 title: "Lecturer in Mathematics"

@@ -1,7 +1,7 @@
 ---
 layout: content
 
-number: 3
+number: 2
 company: "Argyle Data"
 period: "June, 2014 - February, 2015"
 title: "Data Scientist"

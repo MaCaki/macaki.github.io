@@ -35,8 +35,9 @@ layout: home
   	<h3 align = "left "> selected projects </h3>
 	  	<div class="panel panel-default">
 			<div class="panel-body">
- 
-				{% for project in site.projects %}
+
+ 				{% assign projects = site.projects | sort: 'number' %}
+				{% for project in projects  %}
 
 					<p> <strong> {{ project.name }} </strong> at {{project.company}} 
 					<br>
