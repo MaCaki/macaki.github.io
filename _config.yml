@@ -38,19 +38,16 @@ phone_number: "1 (415) 767-8984"
 email:  m (dot) cadier (dot) kim (at) gmail (dot) com
 languages: 
   - English
-  - French (Fluent)
+  - French 
   - Java
   - Python
-  - Matlab
-  - Julia  
-  - C++
+  - Matlab 
 tools:
   - AWS
   - OpenCV
   - Scikit-learn
 references:
   - "Dr. David Bao, dbao@sfsu.edu, Chair of Math Dept."
-  - "Addie Evans, addieevans@gmail.com, Teaching supervisor"
   - "Dr. Federico Ardila, federico@sfsu.edu, Academic Advisor"
   - "Dr. Travis Porco, Travis.Porco@ucsf.edu, Research Supervisor"
 
