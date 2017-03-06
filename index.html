@@ -10,8 +10,7 @@ layout: home
 				<img class="img-circle" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="cool image">
 			  </div>
 
-			  <h3>  I am <strong>Matthew Kim</strong>. <br>
-			   tl;dr:  combinatorial optimization, polytopes, computer vision, machine learning</h3>
+			  <h3>  <strong>Matthew Cadier Kim</strong>. <br> </h3>
 		
 		</div>
 
@@ -83,7 +82,7 @@ layout: home
 <section id="cv">
 	<div class="container">
 
-  	<h3 align = "left "> curriculum vitae  <a href="/assets/cv_engineering_compiled.pdf" class="btn btn-info btn-lg active">  pdf </a></h3>
+  	<h3 align = "left "> curriculum vitae  <a href="/assets/cv_engineering_compiled.pdf" class="active">  pdf </a></h3>
 	  	<div class="panel panel-default">
 			<div class="panel-body">
 			
@@ -121,35 +120,22 @@ layout: home
 <section id="teaching">
 	<div class="container">
 
-  	<h3 align = "left "> teaching <a href="/assets/cv_teaching_compiled.pdf" class="btn btn-info btn-lg active">  pdf </a></h3></h3>
+  	<h3 align = "left "> teaching <a href="/assets/cv_teaching_compiled.pdf" class="active">  pdf </a></h3></h3>
 	  	<div class="panel panel-default">
 			<div class="panel-body">
 
-			<h4> Classes </h4>
+				<div class="panel-body"  >
+				    <div id="teaching_bio">
+						{{ site.about | where:"name","teaching_bio"}}
+					</div>
+				 </div>
+
+			<h4> classes taught</h4>
 			{% for class in site.classes %}
 				
 					<p> <a href = "{{class.url}}"> <strong> {{ class.name }} </strong></a>  {{class.semester}} {{ class.year}} at {{ class.school}} </p>
 
 			{% endfor %}
-
-
-			<div class="panel panel-default">
-
-			  <div class="panel-heading">
-			  		<a href="#teaching_bio" id="teaching-trigger" class="btn btn-info btn-lg active"> Tutoring
-			  		 </a> 
-			  </div>
-				  <div class="panel-body"  >
-				    <div class="hidden" id="teaching_bio">
-						{{ site.about | where:"name","teaching_bio"}}
-					</div>
-				  </div>
-			</div>
-
-
-			
-
-
 
 			</div>
 		</div>
