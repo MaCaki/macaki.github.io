@@ -2,18 +2,21 @@
 layout: content
 name: teaching_bio
 ---
-I am <strong> currently available for tutoring </strong> in any subject of undergraduate and high school mathematics as well as programming.  My radius on in person tutoring covers San Francisco and 15 min by car beyond that.  
+I am available as tutor, mentor, or consultant in a variety of capacities. 
 
-I have four years of teaching experience in a variety of roles from principal instructor of college math classes to one-on-one mentoring with high school students.  Therefore, I have mastered  all aspects of undergraduate and high school math (my MA permits me to use this self-qualification) as well as the fundamentals of computer science. 
+I have taught first year college courses and the equivalent of high school algebra for four years.  Therefore, I have mastered  all aspects of undergraduate and high school math (my MA permits me to use this self-qualification) as well as the fundamentals of computer science. 
 
-Things I can tutor: 
-- Algebra 1 and 2
-- Precalculus
-- Trigonometry
-- Geometry
-- Calculus 1,2 and 3
+Academic Tutoring Topics: 
+- All of high school math (Algebra, Trig, Geometry, Calc, Stats etc.)
 - Linear Algebra
- 
+- Probability and Statistics
+- Machine learning
+- Discrete Mathematics
+- Univariate and Multivariate Calculus
+- Algorithms
+- Software Engineering
 
-The philosophy that I bring to every class and tutoring session is that it is going to be a period of high intensity training.  However I assume that for the student, it is only be beginning of their training, and that for every hour spent in class in a tutoring session with me, at least one hour will be spent in self-study to completely master the topic.  Together we lay the ground work and the pace for that study. Tutoring is not be an extension of lecture, but a training session where I exepect a high level of student effort, attention and creativity.  My method is to quickly develop a casual but engaging rapport with the student so that we feel comfortable making mistakes in front of eachother and are able to collaborate on a learning method rather than drilling problems.  The aim is two fold: to help students realize the level of commitment, work, and intellectual awareness required to really master subjects, as well as instill confidence that they are capable of doing so.   
+Additionally I am available to consult on and tutor subjects pertinent to <br> working professionals </br>. I regularly conduct interviews for data science candidates,= and can provide feedback on resumes, practice coding and mathematical interview questions, and consult on general questions regarding a career in data science.
+
+The philosophy that I bring to every class and tutoring session is that it is going to be a period of high intensity training.  However I assume that for the student, it is only be beginning of their training, and that for every hour spent in class in a tutoring session with me, at least one hour will be spent in self-study to completely master the topic.  Together we lay the ground work and the pace for that study. Tutoring is not be an extension of lecture, but a training session where I expect a high level of student effort, attention and creativity.  My method is to quickly develop a casual but engaging rapport with the student so that we feel comfortable making mistakes in front of each other and are able to collaborate on a learning method rather than drilling problems.  The aim is two fold: to help students realize the level of commitment, work, and mental awareness required to really master subjects, as well as instill confidence that they are capable of doing so.   
 

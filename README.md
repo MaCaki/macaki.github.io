@@ -9,7 +9,7 @@ This framework allows me to write content once, and have both an html and a clea
 
 To update content checkout the branch `working-source` then checkout a feature branch off of it. Once the content is done merge back into the `working-source` branch, **not into master**.
 
-To add a new piece of content to a category (for example, a paper), create a new `.md` file in the folder `_{category}`, following the format of a [data file](https://jekyllrb.com/docs/datafiles/)
+To add a new piece of content to a category (for example, a paper), create a new `.md` file in the folder `_{category}`, following the format of a [data file](https://jekyllrb.com/docs/datafiles/).
 
 ### Compiling site
 Once the `working-source` branch is updated run `rake`, which will run Jekyll to make the site, then merge the contents of `/site` into master. 
