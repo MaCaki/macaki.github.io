@@ -4,7 +4,7 @@ name: teaching_bio
 ---
 I am available as tutor, mentor, or consultant in a variety of capacities.
 
-<h3>Academic Subjects</h3>
+<h4>Academic Subjects</h4>
 I have taught first year college courses and the equivalent of high school algebra for four years.
 I have experience teaching most areas of high school and undergraduate mathematics
 as well as computer science.
@@ -21,12 +21,12 @@ Tutoring subjects include:
 <li>Software Engineering</li>
 </ul>
 
-<h3>Professional Consulting</h3>
+<h4>Professional Consulting</h4>
 I regularly source and interview data science candidates, and can provide
  feedback on resumes, practice coding and mathematical interview questions,
  and consult on general questions regarding a career in data science.
 
-<h3>General Teaching Philosophy</h3>
+<h4>General Teaching Philosophy</h4>
 
 I aim to make every class or tutoring session a period of high intensity training.
  However I assume that for the student, it is only be beginning of their training,

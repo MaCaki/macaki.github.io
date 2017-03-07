@@ -5,13 +5,11 @@ layout: home
 <section id="home">
 	<div class = "container">
 		<div class="landingbg">
-			
+
 			  <div class="avatar">
 				<img class="img-circle" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="cool image">
 			  </div>
 
-			  <h3>  <strong>Matthew Cadier Kim</strong>. <br> </h3>
-		
 		</div>
 
 	</div>
@@ -20,8 +18,8 @@ layout: home
 <section id="about">
 	<div class = "container">
 	  	<h3 align = "left "> about </h3>
-	  
-	    <h4 align="left"> 	
+
+	    <h4 align="left">
   			{{ site.about | where:"name","eng_bio"}}
 	 	</h4>
 	</div>
@@ -38,7 +36,7 @@ layout: home
  				{% assign projects = site.projects | sort: 'number' %}
 				{% for project in projects  %}
 
-					<p> <strong> {{ project.name }} </strong> at {{project.company}} 
+					<p> <strong> {{ project.name }} </strong> at {{project.company}}
 					<br>
 					{{ project.description }} </p>
 
@@ -76,7 +74,7 @@ layout: home
 
 
 
-<!--   CV stuff   -->  
+<!--   CV stuff   -->
 
 
 <section id="cv">
@@ -85,7 +83,7 @@ layout: home
   	<h3 align = "left "> curriculum vitae  <a href="/assets/cv_engineering_compiled.pdf" class="active">  pdf </a></h3>
 	  	<div class="panel panel-default">
 			<div class="panel-body">
-			
+
 			{{ site.cv | where: "format","html" }}
 
 			</div>
@@ -96,7 +94,7 @@ layout: home
 
 
 
-<!--  Math stuff   -->  
+<!--  Math stuff   -->
 
 
 <section id="cv">
@@ -105,8 +103,8 @@ layout: home
   	<h3 align = "left "> math  </h3>
 	  	<div class="panel panel-default">
 			<div class="panel-body">
-			
-			<h4 align="left"> 	
+
+			<h4 align="left">
   				{{ site.about | where:"name","math_bio"}}
 	 		</h4>
 
@@ -114,7 +112,7 @@ layout: home
 		</div>
 	</div>
 </section>
-<!--   Teaching   -->  
+<!--   Teaching   -->
 
 
 <section id="teaching">
@@ -132,7 +130,7 @@ layout: home
 
 			<h4> classes taught</h4>
 			{% for class in site.classes %}
-				
+
 					<p> <a href = "{{class.url}}"> <strong> {{ class.name }} </strong></a>  {{class.semester}} {{ class.year}} at {{ class.school}} </p>
 
 			{% endfor %}

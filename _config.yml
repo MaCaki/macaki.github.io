@@ -5,7 +5,7 @@ rdiscount:
   extensions: [smart]
 permalink: /:title.html
 paginate: 5
-gems: 
+gems:
   - jekyll-paginate
 port: 3000
 safe: false
@@ -18,7 +18,7 @@ collections:
   - conferences
   - work_history
   - about
-  - projects 
+  - projects
   - papers
   - education
   - classes
@@ -36,30 +36,34 @@ author: Matthew Cadier Kim
 street_address: "Thorton Hall 912, 1600 Holloway Ave, San Francisco, CA 94132"
 phone_number: "1 (415) 767-8984"
 email:  m (dot) cadier (dot) kim (at) gmail (dot) com
-languages: 
+languages:
   - English
-  - French 
+  - French
   - Java
   - Python
-  - Matlab 
+  - SQL
+  - Matlab
 tools:
-  - AWS
   - OpenCV
   - Scikit-learn
+  - SqlAlchemy
+  - Redshift
+  - Kinesis
+  - Flask
 references:
-  - "Dr. David Bao, dbao@sfsu.edu, Chair of Math Dept."
+  - "Dr. David Aurbach, david@postmates.com, Engineering Lead Postmates"
   - "Dr. Federico Ardila, federico@sfsu.edu, Academic Advisor"
   - "Dr. Travis Porco, Travis.Porco@ucsf.edu, Research Supervisor"
 
 
 avatar: hex_art.png
 github: macaki # username
-twitter: 
+twitter:
 linkedin: matthew-kim-98406427
 stackoverflow:    #e.g: users/2735833/proton1h1
-#Comment out if you don't want disqus 
-disqus: 
-google_analytics: 
+#Comment out if you don't want disqus
+disqus:
+google_analytics:
 
 
 # needed for travis-ci build

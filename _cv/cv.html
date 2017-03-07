@@ -27,7 +27,7 @@ subject: general
         <article>
             <p>  <strong>{{conf.title}}</strong> at {{conf.institution}}, {{conf.location}}  <time>{{conf.year}}</time>:  {{conf.role}}
             </p>
-             
+
         </article>
       {% endfor %}
 
@@ -41,7 +41,7 @@ subject: general
   	{% for paper in papers  %}
 
 	    <article>
-	            <p> <a href="{{paper.url}}"> <strong> {{ paper.title }} </strong> </a>, 
+	            <p> <a href="{{paper.url}}"> <strong> {{ paper.title }} </strong> </a>,
 	            	{{ paper.year }},
 	            	{% if paper.coauthors %}
 	            		with {{ paper.coauthors}},
@@ -59,11 +59,11 @@ subject: general
     {% assign education = site.education | sort:'number' %}
     {% for edu in education %}
 	    <article>
-	            <p>  <strong> {{ edu.institution }}, </strong>  
+	            <p>  <strong> {{ edu.institution }}, </strong>
 	            	{{ edu.degree }},
 	            	{{ edu.subject }},
-	            	{{ edu.year }} 
-	            	{% if edu.notes %}  ({{ edu.notes }}) 	{% endif %}			            
+	            	{{ edu.year }}
+	            	{% if edu.notes %}  ({{ edu.notes }}) 	{% endif %}
 	            </p>
 	    </article>
 
@@ -73,7 +73,8 @@ subject: general
   <h4> languages/tools </h4>
     <article>
       {% for lang in  site.languages %} {{ lang }} {% endfor %}
-      <br> <h4>working with: </h4> <br>
+      <br>
+  <h5>Tools: </h5> <br>
       {% for tool in  site.tools %} {{ tool }} {% endfor %}
     </article>
 
