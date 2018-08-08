@@ -1,6 +1,6 @@
 ---
 layout: content
-number: 1
+number: 2
 
 title: Summer Graduate School on Geometric Group Theory
 institution: MSRI

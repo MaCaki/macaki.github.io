@@ -41,6 +41,8 @@ which will run Jekyll to make the site, then merge the contents of `/site` into 
 
 ##TODO
 
+* Make it possible to compile the pdf CV without committing to master.
+
 * work on layout of teaching section
 
 * add graphics to the math portion.
