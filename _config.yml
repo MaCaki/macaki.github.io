@@ -33,26 +33,22 @@ description: Personal site and cv
 
 #  Personal info for the CV
 author: Matthew Cadier Kim
-street_address: "Thorton Hall 912, 1600 Holloway Ave, San Francisco, CA 94132"
+street_address: "San Francisco CA"
 phone_number: "1 (415) 767-8984"
 email:  m (dot) cadier (dot) kim (at) gmail (dot) com
 languages:
-  - English
-  - French
-  - Java
   - Python
-  - SQL
-  - Matlab
+  - Ruby
+  - Java
+  - SQL dialects
 tools:
-  - OpenCV
+  - Django, Rails, Flask
+  - Redshift
   - Scikit-learn
   - SqlAlchemy
   - Redshift
-  - Kinesis
-  - Flask
 references:
   - "Dr. David Aurbach, david@postmates.com, Engineering Lead Postmates"
-  - "Dr. Federico Ardila, federico@sfsu.edu, Academic Advisor"
   - "Dr. Travis Porco, Travis.Porco@ucsf.edu, Research Supervisor"
 
 
@@ -60,10 +56,9 @@ avatar: hex_art.png
 github: macaki # username
 twitter:
 linkedin: matthew-kim-98406427
-stackoverflow:    #e.g: users/2735833/proton1h1
-#Comment out if you don't want disqus
-disqus:
-google_analytics:
+# stackoverflow:  
+# disqus:
+# google_analytics:
 
 
 # needed for travis-ci build
