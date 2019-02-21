@@ -2,9 +2,9 @@
 layout: content
 number: 2
 type: paper
-title: Discriminating Eyelids with Trachomatous Inflammation - Follicular
-url: 
+title: Sensitivity and specificity of computer vision classification of eyelid photographs for programmatic trachoma assessment
+url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210463
 year: 2015
 coauthors: Dr. Travis Porco and Dr. Kazunori Okada
-notes: in progress
+notes: UCSF F. I. Proctor Foundation project  
 ---
