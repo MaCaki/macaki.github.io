@@ -1,13 +1,77 @@
----
-layout: home
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Matthew Cadier Kim" />
+    <meta name="description" content="Personal site and cv">
+    <link rel="favicon" href="/static/img/favicon.ico">
 
-<section id="home">
+    
+      <title>Matthew Cadier Kim</title>
+    
+	
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+    crossorigin="anonymous">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- Custom styles for this template -->
+    <link href="/static/css/main.css" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="/static/css/bootstrap.icon-large.min.css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+  <!-- Main Body-->
+  <body>
+  <!-- Wrap all page content here -->
+  <div id="wrap">
+    <!-- Navbar header -->
+    <nav class="navbar navbar-default ">
+  <div class="container">
+    <div class="navbar-header">
+
+      <a class="navbar-brand" href="/index.html">  Matthew Cadier Kim  </a>
+    </div>
+
+    <div id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/#about"> me </a></li>
+        <li><a href="/#projects"> projects  </a></li>
+        <li><a href="/#cv">  cv </a></li>
+        <li><a href="/#services">  services </a></li>
+        <li><a href="/#writing">writing</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <section id="home">
 	<div class = "container">
 		<div class="landingbg">
 
 			  <div class="avatar">
-				<img class="img-circle" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="cool image">
+				<img class="img-circle" src="/static/img/hex_art.png" alt="cool image">
 			  </div>
 
 		</div>
@@ -20,7 +84,10 @@ layout: home
 	  	<h3 align = "left "> about </h3>
 
 	    <h4 align="left">
-  			{{ site.about | where:"name","eng_bio"}}
+  			<p>Machine learning engineer and applied mathematician.  Building real-time inference and prediction 
+systems for payments fraud, on-demand logistics, and platform security.  Built machine vision pipelines 
+and classifiers for epidemiology and did research in combinatorial optimization and discrete geometry.</p>
+
 	 	</h4>
 	</div>
 </section>
@@ -33,14 +100,44 @@ layout: home
 	  	<div class="panel panel-default">
 			<div class="panel-body">
 
- 				{% assign projects = site.projects | sort: 'number' %}
-				{% for project in projects  %}
+ 				
+				
 
-					<p> <strong> {{ project.name }} </strong> at {{project.company}}
+					<p> <strong> Risk Assessment Service </strong> at Postmates
 					<br>
-					{{ project.description }} </p>
+					Designed and built a real-time risk assessment service for Postmates. Using kinesis events, the service makes decisions for every single job on the platform as well as reconstructs customer and merchant data as a network graph.  The service increased the velocity and scope of anti-fraud measures available to the Risk team. </p>
 
-				{% endfor %}
+				
+
+					<p> <strong> PostGIS to Redshift ETL </strong> at Postmates
+					<br>
+					Added a feature to our core ETL pipeline that allows us to extract data from PostGIS data types and store them as data types available in AWS's Redshift.  This made available vital geo-spatial  data to analysts for business intelligence generation. </p>
+
+				
+
+					<p> <strong> CNNs to diagnose Trachoma </strong> at  UCSF Francis I. Proctor Foundation for Research in Ophthamology
+					<br>
+					I designed and implemented an algorithm to classify photographs taken in the field of patient's everted eyelids as being infected with trachoma.  Features were extracted using transfer learning from a large convolutional neural network and were used to train a classifier that discriminates between healthy eyelids and those with follicles and inflamation.  </p>
+
+				
+
+					<p> <strong> Counting bloom filter for spam detection </strong> at Argyle Data
+					<br>
+					I adapted and implemented the counting Bloom filter from the AT&T research paper "Mitigating SMS Spam by Online Detection of Repetitive Near-Duplicate Messages".  The filter produces  an on-line, probabilistic count of similar text messages in constant memory. Using this I was able to identify mass SMS campaigns and possible fraud in the client's unlabeled database. </p>
+
+				
+
+					<p> <strong> Hidden Markov models for fraud </strong> at Argyle Data
+					<br>
+					Researched, adapted and implemented a hidden Markov model for fraud detection in a telecommunications data. We trained a one-class classifier for sequential data, which was used for anomaly detection, identifying previously unknown irregularities in customer behavior to the client. </p>
+
+				
+
+					<p> <strong> Modifying Jekyll to make this site work  </strong> at Myself
+					<br>
+					I created a plugin for jekyll to suit my needs and make the most perfect and efficient resume site.   But sometimes it still doth protest my commands. </p>
+
+				
 
 
 			</div>
@@ -58,13 +155,13 @@ layout: home
 	  	<div class="panel panel-default">
 			<div class="panel-body">
 
-				{% for article in site.articles %}
+				
 
-					<p><a href = {{article.url}}> <strong> {{article.title}} </strong>  </a>
+					<p><a href = /articles/matroid_intro> <strong> Seeing the forest for the matroid of trees </strong>  </a>
 					<br>
-					{{article.summary}}  </p>
+					Light introduction to matroids through Kruskall's algorithm  </p>
 
-				{% endfor %}
+				
 
 			</div>
 		</div>
@@ -84,7 +181,205 @@ layout: home
 	  	<div class="panel panel-default">
 			<div class="panel-body">
 
-			{{ site.cv | where: "format","html" }}
+			<h4>work</h4>
+
+	
+  
+    <article>
+        <header>
+            <h5> <strong>Machine Learning Engineer</strong> at Coinbase </h5>
+            <span>  <address>San Francisco, CA </address> <time>November 2017 - present</time> <br> supervisor: Christian Mladenov</span>
+        </header>
+
+        <p> Backend services delivering model predictions and rule evaluations for payments risk, event pipelines, ETL, data warehousing. </p>
+    </article>
+    
+    <article>
+        <header>
+            <h5> <strong>Data Scientist</strong> at Postmates </h5>
+            <span>  <address>San Francisco, CA </address> <time>May, 2016 - November 2017</time> <br> supervisor: Dr. David Auerbach</span>
+        </header>
+
+        <p> Built event-based prediction services for payments fraud, platform abuse, and prep-time estimation.  Worked on systems to train and deploy statistical models, internal services and apis, airflow maintance, ETL jobs, ad hoc analysis, BI table design, and running portions of the interviews for DS and DE candidates. </p>
+    </article>
+    
+    <article>
+        <header>
+            <h5> <strong>Machine Vision Engineer </strong> at UCSF Proctor Foundation </h5>
+            <span>  <address>San Francisco, CA </address> <time>May, 2015 - present</time> <br> supervisor: Dr. Travis Porco</span>
+        </header>
+
+        <p> Worked on a grant funded project to detect Trachoma in field images. I investigated and developed machine learning algorithms to classify images of eyelids. I worked with the PI to define the direction of the project and was the principal developer of the grading application. </p>
+    </article>
+    
+    <article>
+        <header>
+            <h5> <strong>Data Scientist</strong> at Argyle Data </h5>
+            <span>  <address>San Mateo, CA </address> <time>June, 2014 - February, 2015</time> <br> supervisor: Arshak Navruzyan</span>
+        </header>
+
+        <p> I prototyped statistical machine learning algorithms for time series analysis and fraud detection in network data as well as implemented production versions in Java. </p>
+    </article>
+    
+
+
+ <h4> conferences </h4>
+
+   
+      
+
+        <article>
+            <p>  <strong>UAI 2018</strong> at Association for Uncertainty in Artificial Intelligence, Monterey, CA  <time>2018</time>:  Participant
+            </p>
+
+        </article>
+      
+
+        <article>
+            <p>  <strong>Fourth Encuentro Colombiano de Combinatoria</strong> at Universidad de los Andes, Bogota, Colombia  <time>2014</time>:  invited speaker
+            </p>
+
+        </article>
+      
+
+        <article>
+            <p>  <strong>FPSAC</strong> at KAIST, Daejeon, South Korea  <time>2015</time>:  participant
+            </p>
+
+        </article>
+      
+
+        <article>
+            <p>  <strong>Summer Graduate School on Geometric Group Theory</strong> at MSRI, Berkeley, CA, USA  <time>2015</time>:  invited participant
+            </p>
+
+        </article>
+      
+
+        <article>
+            <p>  <strong>Richard Stanley Birthday Conference</strong> at MIT, Cambridge MA, USA  <time>2014</time>:  participant
+            </p>
+
+        </article>
+      
+
+
+
+
+
+
+  <h4> papers/talks </h4>
+    
+  	
+
+	    <article>
+	            <p> <a href="/papers/thesis"> <strong> A Characterization of Generalized Permutohedra for the Classical Reflection Groups </strong> </a>,
+	            	2015,
+	            	
+	            	
+	            		(thesis)
+	            	
+	            </p>
+	    </article>
+
+    
+
+	    <article>
+	            <p> <a href="/papers/poster_gp"> <strong> Generalized W-Permutohedra (poster) </strong> </a>,
+	            	2015,
+	            	
+	            	
+	            		(Poster presented at graduate student showcase.)
+	            	
+	            </p>
+	    </article>
+
+    
+
+	    <article>
+	            <p> <a href="/papers/thesis_talk"> <strong> Generalized W-permutohedra (Talk) </strong> </a>,
+	            	2015,
+	            	
+	            	
+	            		((slides for a talk about the background of my thesis))
+	            	
+	            </p>
+	    </article>
+
+    
+
+	    <article>
+	            <p> <a href="/papers/trachoma"> <strong> Sensitivity and specificity of computer vision classification of eyelid photographs for programmatic trachoma assessment </strong> </a>,
+	            	2015,
+	            	
+	            		with Dr. Travis Porco and Dr. Kazunori Okada,
+	            	
+	            	
+	            		(UCSF F. I. Proctor Foundation project)
+	            	
+	            </p>
+	    </article>
+
+    
+
+	    <article>
+	            <p> <a href="/papers/matroid_ideals"> <strong> Free resoltuions of matroid ideals </strong> </a>,
+	            	2015,
+	            	
+	            		with Justin Davis,
+	            	
+	            	
+	            </p>
+	    </article>
+
+    
+
+  <h4> education </h4>
+
+    
+    
+	    <article>
+	            <p>  <strong> SFSU, </strong>
+	            	MA,
+	            	Mathematics,
+	            	2016
+	            	
+	            </p>
+	    </article>
+
+    
+	    <article>
+	            <p>  <strong> University of Paris-1, </strong>
+	            	Visiting Student,
+	            	Philosophy, Logic, Mathematics,
+	            	2009-2011
+	            	
+	            </p>
+	    </article>
+
+    
+	    <article>
+	            <p>  <strong> SFSU, </strong>
+	            	BA,
+	            	Philosophy, Mathematics, Computer Science,
+	            	2012
+	            	
+	            </p>
+	    </article>
+
+    
+
+
+  <h4> languages/tools </h4>
+    <article>
+       Python,  Ruby,  Java,  SQL dialects 
+      <br>
+  <h5>Tools: </h5> <br>
+       Django, Rails, Flask,  Redshift,  Scikit-learn,  General AWS services 
+    </article>
+
+
+
 
 			</div>
 		</div>
@@ -105,7 +400,10 @@ layout: home
 			<div class="panel-body">
 
 			<h4 align="left">
-  				{{ site.about | where:"name","math_bio"}}
+  				<p>I am interested in polytopes whose normal fans are related to the classical symmetry groups and submodular functions such as Coxeter matroid polytopes, and generalized permutohedra.</p>
+
+<p>I would like to see how we can use groups and other algebraic structures to describe geometric phenomena, and vice versa. Currently I am trying to see how certain set functions and problems from classical combinatorial optimization can be generalized beyond the Symmetric group.</p>
+
 	 		</h4>
 
 			</div>
@@ -125,7 +423,18 @@ layout: home
 				<h4>consulting</h4>
 				<div class="panel-body"  >
 				    <div id="consulting_info">
-						{{ site.about | where:"name","consulting_info"}}
+						<p>I am sometimes available to provide consulting and IC work on projects involving
+data engineering, data infrastructure, ad hoc analysis, design of 
+machine learning systems, and general data strategy.</p>
+
+<p>Setting up a good data model and strategy for data collection can usually determine success
+of a data project.  What this means in practice is simply defining the right schema for your
+prospective set of questions and ensuring immutability of the data warehouse and idempotency of 
+Jobs.  This requires somewhat tedious and detail oriented work that I’ve developed sensitivities 
+to and strategies for during my time on data teams at high growth start-ups.  As an ML practictioner
+I generally think in terms of long term capabilities to summarize data into trained models and
+extract value in the form of downstream data products.</p>
+
 					</div>
 				 </div>
 
@@ -135,7 +444,28 @@ layout: home
 				<div class="panel-body"  >
 				    <div id="teaching_bio">
 				    	 <a href="/assets/cv_teaching_compiled.pdf" class="active">  Teaching CV </a>
-						{{ site.about | where:"name","teaching_bio"}}
+						<p>I have taught mathematics, statisitics, and computer science in both one on one and classroom settings.
+I can aid with the following subjects:</p>
+
+<ul>
+<li>HS and lower division undergrad math (Algebra, Trig, Geometry, Calc, Stats etc.)</li>
+<li>Linear Algebra</li>
+<li>Probability and Statistics</li>
+<li>Machine learning</li>
+<li>Discrete Mathematics</li>
+<li>Univariate and Multivariate Calculus</li>
+<li>Algorithms</li>
+<li>Software Engineering</li>
+<li>Mock coding interviews</li>
+</ul>
+
+<p>Learning mathematics is hard.  But not any harder than learning music or a new physical 
+skill.  Tutoring meetings should be expected to be high intensity training sessions
+where we establish the framework for self study.  We set the correct expectations for the
+domain of interest as well as workshop a disciplined and appropriately paced curriculum.</p>
+
+<p>Feel free to inquire with questions about your particular study goals.</p>
+
 					</div>
 				 </div>
 
@@ -149,7 +479,54 @@ layout: home
 
 <section id="contact">
 	<div class = "container">
-	 	<h3>Contact me at: {{ site.email }} </h3>
-		  {% include social.html %}
+	 	<h3>Contact me at: m (dot) cadier (dot) kim (at) gmail (dot) com </h3>
+		  <div class="social">
+	<h4>
+    
+	  <a href="http://github.com/macaki"><i class="fa fa-github"></i></a>
+    
+    
+	  <a href="mailto:m (dot) cadier (dot) kim (at) gmail (dot) com"><i class="fa fa-envelope"></i></a>
+    
+
+    
+    
+	  <a href="http://linkedin.com/in/matthew-kim-98406427"><i class="fa fa-linkedin"></i></a>
+    
+    
+	</h4>
+</div>
+
 	</div>
 </section>
+
+
+
+
+
+    
+
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div id="footer">
+        <div class="container">
+            <p class="text-muted">© All rights reserved.
+        </div>
+    </div>
+</footer>
+<div class="footer"></div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+    integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+    crossorigin="anonymous"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="/static/js/docs.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
