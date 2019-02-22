@@ -23,7 +23,11 @@ Since github only builds Jekyll sites in 'safe' mode, the site has to be build
 locally to generate the pdf. Ensure that `pdflatex` is installed,
 as the site requires compilation of LaTex files.
 
-To update content:
+### Setting up the environemnt
+1. Install jekyll by running `bundle install`
+2. Install LaTex. ([MacTex](https://tug.org/mactex/mactex-download.html) if you're on mac OS)
+
+### Making Content Changes
 
 1. Checkout the branch `working-source` then checkout a feature branch off of it.
 
