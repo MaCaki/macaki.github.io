@@ -7,5 +7,7 @@ period: "May, 2016 - November 2017"
 title: "Data Scientist"
 supervisor: Dr. David Auerbach
 location: "San Francisco, CA"
-description: "Built real time stream basesd prediction services for fraud detection and prep-time estimation. Responsibilities included data analysis and BI generation, statistical model training, building production model serving software, architecting micro services, building and maintaining etl work flows and platforms, and running portions of our interview process."
+description: "Built event-based prediction services for payments fraud, platform abuse, and prep-time estimation.  Worked on
+ systems to train and deploy statistical models, internal services and apis, airflow maintance, ETL jobs, ad hoc analysis, BI table
+ design, and running portions of the interviews for DS and DE candidates.
 ---
