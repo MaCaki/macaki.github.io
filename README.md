@@ -33,6 +33,7 @@ as the site requires compilation of LaTex files.
 
 2. Make content changes.
     1. To add a new piece of content to a category (for example, a paper), create a new `.md` file in the folder `_{category}`, following the format of a [data file](https://jekyllrb.com/docs/datafiles/).
+    2. Edit existing content or html template files. 
 
 
 3. Open PR proposing merge into `working-source` branch, **not into master**.

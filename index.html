@@ -112,28 +112,32 @@ layout: home
 		</div>
 	</div>
 </section>
-<!--   Teaching   -->
+<!--   services (teaching and consulting)   -->
 
 
-<section id="teaching">
+<section id="services">
 	<div class="container">
 
-  	<h3 align = "left "> teaching <a href="/assets/cv_teaching_compiled.pdf" class="active">  pdf </a></h3></h3>
+  	<h3 align = "left "> services</h3></h3>
 	  	<div class="panel panel-default">
 			<div class="panel-body">
 
+				<h4>consulting</h4>
 				<div class="panel-body"  >
-				    <div id="teaching_bio">
-						{{ site.about | where:"name","teaching_bio"}}
+				    <div id="consulting_info">
+						{{ site.about | where:"name","consulting_info"}}
 					</div>
 				 </div>
 
-			<h4> classes taught</h4>
-			{% for class in site.classes %}
+				<br>
 
-					<p> <a href = "{{class.url}}"> <strong> {{ class.name }} </strong></a>  {{class.semester}} {{ class.year}} at {{ class.school}} </p>
-
-			{% endfor %}
+				<h4>teaching</h4>
+				<div class="panel-body"  >
+				    <div id="teaching_bio">
+				    	 <a href="/assets/cv_teaching_compiled.pdf" class="active">  Teaching CV </a>
+						{{ site.about | where:"name","teaching_bio"}}
+					</div>
+				 </div>
 
 			</div>
 		</div>
