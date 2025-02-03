@@ -2,6 +2,4 @@
 layout: content
 name: eng_bio
 ---
-Machine learning engineer and applied mathematician.  Building real-time inference and prediction 
-systems for payments fraud, on-demand logistics, and platform security.  Built machine vision pipelines 
-and classifiers for epidemiology and did research in combinatorial optimization and discrete geometry.
+Seasoned software engineer with extensive experience in fintech, Bitcoin infrastructure, and machine learning. Proven track record at high-growth startups and major financial technology companies. Expertise in real time machine learning systems, risk management, cryptocurrency systems, and data engineering.

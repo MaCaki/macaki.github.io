@@ -2,15 +2,6 @@
 layout: content
 name: consulting_info
 ---
+I provide consulting and independent contractor work in data engineering, infrastructure, analysis, machine learning systems design, and data strategy.
 
-I am sometimes available to provide consulting and IC work on projects involving
-data engineering, data infrastructure, ad hoc analysis, design of 
-machine learning systems, and general data strategy.  
-
-Setting up a good data model and strategy for data collection can usually determine success
-of a data project.  What this means in practice is simply defining the right schema for your
-prospective set of questions and ensuring immutability of the data warehouse and idempotency of 
-Jobs.  This requires somewhat tedious and detail oriented work that I've developed sensitivities 
-to and strategies for during my time on data teams at high growth start-ups.  As an ML practictioner
-I generally think in terms of long term capabilities to summarize data into trained models and
-extract value in the form of downstream data products. 
+A well-designed data model and collection strategy is often the key determinant of a data project's success. This means creating the right schema for your analytical needs while ensuring data warehouse immutability and job idempotency. Through my experience on data teams at high-growth startups, I've developed expertise in this detail-oriented work and built effective strategies to manage it. As a machine learning practitioner, I focus on building long-term capabilities to transform data into trained models and create valuable downstream data products.
