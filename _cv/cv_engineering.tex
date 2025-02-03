@@ -105,7 +105,7 @@ subject: engineering
   \begin{list1}
     {% assign education = site.education | sort:'number' %}
     {% for edu in education %}
-        \item  {\bf {{ edu.institution }}:}\textbf{ {{ edu.degree }} }, {{ edu.subject }}, {{ edu.year }}
+        \item  {\bf {{ edu.institution }}:}\textbf{ {{ edu.degree }} }, {{ edu.subject }} % {{ edu.year }}
 
         {% if edu.notes %}, ({{ edu.notes }})   {% endif %}  
     {% endfor %}
