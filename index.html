@@ -102,13 +102,11 @@ layout: home
 
   	<h3 align = "left "> math  </h3>
 	  	<div class="panel panel-default">
-			<div class="panel-body">
-
-			<h4 align="left">
-  				{{ site.about | where:"name","math_bio"}}
-	 		</h4>
-
-			</div>
+ 			<div class="panel-body"  >
+			    <div id="math_bio">
+					{{ site.about | where:"name","math_bio"}}
+				</div>
+			 </div>
 		</div>
 	</div>
 </section>
