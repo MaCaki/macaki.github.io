@@ -43,7 +43,7 @@ subject: general
   	{% for paper in papers  %}
 
 	    <article>
-	            <p> <a href="{{paper.url}}"> <strong> {{ paper.title }} </strong> </a>,
+	            <p> <a href="{{paper.address}}"> <strong> {{ paper.title }} </strong> </a>,
 	            	{{ paper.year }},
 	            	{% if paper.coauthors %}
 	            		with {{ paper.coauthors}},

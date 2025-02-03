@@ -43,6 +43,7 @@ languages:
   - SQL dialects
 tools:
   - Django, Rails, Flask,
+  - bitcion 
   - Redshift,
   - Scikit-learn,
   - General AWS services
@@ -53,7 +54,7 @@ references:
 
 avatar: hex_art.png
 github: macaki # username
-linkedin: matthew-kim-98406427
+linkedin: matthew-kim-7350b8208
 # twitter:
 # stackoverflow:  
 # disqus:
