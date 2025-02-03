@@ -34,12 +34,12 @@ description: Personal site and cv
 #  Personal info for the CV
 author: Matthew Cadier Kim
 street_address: "San Francisco CA"
-phone_number: "1 (415) 767-8984"
+phone_number: "1 (415) 767-****"
 email:  m (dot) cadier (dot) kim (at) gmail (dot) com
 languages:
   - Python,
-  - Ruby,
   - Java,
+  - Kotlin,
   - SQL dialects
 tools:
   - Django, Rails, Flask,
