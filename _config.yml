@@ -45,7 +45,7 @@ tools:
   - The usual python and ruby frameworks,
   - Bitcoin
   - Lightning Network  
-   - Keras
+  - Keras
   - Redshift
   - General AWS services
 references:
