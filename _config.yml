@@ -42,10 +42,11 @@ languages:
   - Kotlin,
   - SQL dialects
 tools:
-  - Django, Rails, Flask,
-  - bitcion 
-  - Redshift,
-  - Scikit-learn,
+  - The usual python and ruby frameworks,
+  - Bitcoin
+  - Lightning Network  
+   - Keras
+  - Redshift
   - General AWS services
 references:
   - "Dr. David Aurbach, david@postmates.com, Engineering Lead Postmates"

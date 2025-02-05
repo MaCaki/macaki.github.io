@@ -1,6 +1,6 @@
 ---
 layout: content
-
+show: true
 number : 2
 name: "Counting bloom filter for spam detection"
 company: "Argyle Data"

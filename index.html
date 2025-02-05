@@ -26,22 +26,17 @@ layout: home
 </section>
 
 
-<section id="projects">
+<!--   CV stuff   -->
+
+
+<section id="cv">
 	<div class="container">
 
-  	<h3 align = "left "> selected projects </h3>
+  	<h3 align = "left "> curriculum vitae  <a href="/assets/cv_engineering_compiled.pdf" class="active">  pdf </a></h3>
 	  	<div class="panel panel-default">
 			<div class="panel-body">
 
- 				{% assign projects = site.projects | sort: 'number' %}
-				{% for project in projects  %}
-
-					<p> <strong> {{ project.name }} </strong> at {{project.company}}
-					<br>
-					{{ project.description }} </p>
-
-				{% endfor %}
-
+			{{ site.cv | where: "format","html" }}
 
 			</div>
 		</div>
@@ -49,7 +44,7 @@ layout: home
 </section>
 
 
-
+<!-- writing (in future a blog?) --> 
 
 <section id="writing">
 	<div class="container">
@@ -72,26 +67,29 @@ layout: home
 </section>
 
 
+<!--   Projects  -->
 
-
-<!--   CV stuff   -->
-
-
-<section id="cv">
+<section id="projects">
 	<div class="container">
 
-  	<h3 align = "left "> curriculum vitae  <a href="/assets/cv_engineering_compiled.pdf" class="active">  pdf </a></h3>
+  	<h3 align = "left "> selected projects </h3>
 	  	<div class="panel panel-default">
 			<div class="panel-body">
 
-			{{ site.cv | where: "format","html" }}
+ 				{% assign projects = site.projects | sort: 'number' %}
+				{% for project in projects  %}
+					{% if project.show == true %}
 
+						<p> <strong> {{ project.name }} </strong> at {{project.company}}
+						<br>
+						{{ project.description }} </p>
+
+					{% endif %}
+				{% endfor %}
 			</div>
 		</div>
 	</div>
 </section>
-
-
 
 
 <!--  Math stuff   -->
