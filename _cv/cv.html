@@ -43,7 +43,7 @@ subject: general
   	{% for paper in papers  %}
 
 	    <article>
-	            <p> <a href="{{paper.url}}"> <strong> {{ paper.title }} </strong> </a>,
+	            <p> <a href="{{paper.address}}"> <strong> {{ paper.title }} </strong> </a>,
 	            	{{ paper.year }},
 	            	{% if paper.coauthors %}
 	            		with {{ paper.coauthors}},
@@ -77,7 +77,7 @@ subject: general
       {% for lang in  site.languages %} {{ lang }} {% endfor %}
       <br>
   <h5>Tools: </h5> <br>
-      {% for tool in  site.tools %} {{ tool }} {% endfor %}
+      {% for tool in  site.tools %} {{ tool }}, {% endfor %}
     </article>
 
 

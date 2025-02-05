@@ -26,54 +26,6 @@ layout: home
 </section>
 
 
-<section id="projects">
-	<div class="container">
-
-  	<h3 align = "left "> selected projects </h3>
-	  	<div class="panel panel-default">
-			<div class="panel-body">
-
- 				{% assign projects = site.projects | sort: 'number' %}
-				{% for project in projects  %}
-
-					<p> <strong> {{ project.name }} </strong> at {{project.company}}
-					<br>
-					{{ project.description }} </p>
-
-				{% endfor %}
-
-
-			</div>
-		</div>
-	</div>
-</section>
-
-
-
-
-<section id="writing">
-	<div class="container">
-
-  	<h3 align = "left "> writing</h3>
-	  	<div class="panel panel-default">
-			<div class="panel-body">
-
-				{% for article in site.articles %}
-
-					<p><a href = {{article.url}}> <strong> {{article.title}} </strong>  </a>
-					<br>
-					{{article.summary}}  </p>
-
-				{% endfor %}
-
-			</div>
-		</div>
-	</div>
-</section>
-
-
-
-
 <!--   CV stuff   -->
 
 
@@ -92,6 +44,52 @@ layout: home
 </section>
 
 
+<!-- writing (in future a blog?) --> 
+
+<section id="writing">
+	<div class="container">
+
+  	<h3 align = "left "> writing</h3>
+	  	<div class="panel panel-default">
+			<div class="panel-body">
+
+				{% for article in site.articles %}
+
+					<p><a href = {{article.address}}> <strong> {{article.title}} </strong>  </a>
+					<br>
+					{{article.summary}}  </p>
+
+				{% endfor %}
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!--   Projects  -->
+
+<section id="projects">
+	<div class="container">
+
+  	<h3 align = "left "> selected projects </h3>
+	  	<div class="panel panel-default">
+			<div class="panel-body">
+
+ 				{% assign projects = site.projects | sort: 'number' %}
+				{% for project in projects  %}
+					{% if project.show == true %}
+
+						<p> <strong> {{ project.name }} </strong> at {{project.company}}
+						<br>
+						{{ project.description }} </p>
+
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
 
 
 <!--  Math stuff   -->

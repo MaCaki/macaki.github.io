@@ -1,6 +1,6 @@
 ---
 layout: content
-
+show: true
 name: "Hidden Markov models for fraud"
 number: 3
 company: "Argyle Data"

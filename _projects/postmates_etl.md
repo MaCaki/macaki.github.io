@@ -1,8 +1,8 @@
 ---
 layout: content
-
+show: true
 number : 0
 name: "PostGIS to Redshift ETL"
 company: "Postmates"
-description: "Added a feature to our core ETL pipeline that allows us to extract data from PostGIS data types and store them as data types available in AWS's Redshift.  This made available vital geo-spatial  data to analysts for business intelligence generation."  
+description: "Postmates dealt with massive amounts of courier location data. I developed a feature for our core ETL pipeline that extracts geo-spatial data from a PostGIS format and stores it in AWS Redshift-compatible data types. This made vital geospatial data available to analysts for business intelligence."  
 ---
