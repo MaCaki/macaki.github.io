@@ -3,7 +3,7 @@ layout: content
 
 number: 0
 company: "Coinbase"
-period: "November 2017 - present"
+period: "November 2017 - December 2018"
 title: "Machine Learning Engineer"
 supervisor: Christian Mladenov
 location: "San Francisco, CA"

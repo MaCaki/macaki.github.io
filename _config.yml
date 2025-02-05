@@ -37,15 +37,15 @@ street_address: "San Francisco CA"
 phone_number: "1 (415) 767-****"
 email:  m (dot) cadier (dot) kim (at) gmail (dot) com
 languages:
-  - Python,
-  - Java,
-  - Kotlin,
+  - Python
+  - Java
+  - Kotlin
   - SQL dialects
 tools:
   - The usual python and ruby frameworks,
   - Bitcoin
   - Lightning Network  
-   - Keras
+  - Keras
   - Redshift
   - General AWS services
 references:
