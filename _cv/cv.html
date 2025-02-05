@@ -74,9 +74,8 @@ subject: general
 
   <h4> languages/tools </h4>
     <article>
-      {% for lang in  site.languages %} {{ lang }} {% endfor %}
+      {% for lang in  site.languages %} {{ lang }}, {% endfor %}
       <br>
-  <h5>Tools: </h5> <br>
       {% for tool in  site.tools %} {{ tool }}, {% endfor %}
     </article>
 

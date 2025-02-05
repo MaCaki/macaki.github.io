@@ -3,8 +3,8 @@ layout: content
 
 number: 1
 company: "Postmates"
-period: "May, 2016 - November 2017"
-title: "Data Scientist"
+period: "May 2016 - November 2017"
+title: "Senior Software Engineer: ML"
 supervisor: Dr. David Auerbach
 location: "San Francisco, CA"
 description: "Built event-based prediction services for payments fraud, platform abuse, and prep-time estimation.  Worked on
