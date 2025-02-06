@@ -222,8 +222,6 @@ article > header > h1 {
     color: inherit;
 }
 
-
-
 .cv-titles {
     color: #b36b00;
 }
@@ -264,6 +262,15 @@ em {
     font-weight: bold;
     color: rgb(100, 100, 100);
     /*margin-right: 6px;*/
+}
+
+/** project list stuff **/
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
 }
 
 
