@@ -1,13 +1,77 @@
----
-layout: home
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Matthew Cadier Kim" />
+    <meta name="description" content="Personal site and cv">
+    <link rel="favicon" href="/static/img/favicon.ico">
 
-<section id="home">
+    
+      <title>Matthew Cadier Kim</title>
+    
+	
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+    crossorigin="anonymous">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<!-- Custom styles for this template -->
+    <link href="/static/css/main.css" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="/static/css/bootstrap.icon-large.min.css" rel="stylesheet">
+
+    <!-- Google Analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+  <!-- Main Body-->
+  <body>
+  <!-- Wrap all page content here -->
+  <div id="wrap">
+    <!-- Navbar header -->
+    <nav class="navbar navbar-default ">
+  <div class="container">
+    <div class="navbar-header">
+
+      <a class="navbar-brand" href="/index.html">  Matthew Cadier Kim  </a>
+    </div>
+
+    <div id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/#about"> me </a></li>
+        <li><a href="/#projects"> projects  </a></li>
+        <li><a href="/#cv">  cv </a></li>
+        <li><a href="/#services">  services </a></li>
+        <li><a href="/#writing">writing</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <section id="home">
 	<div class = "container">
 		<div class="landingbg">
 
 			  <div class="avatar">
-				<img class="img-circle" src="{{ site.baseurl }}static/img/{{ site.avatar }}" alt="cool image">
+				<img class="img-circle" src="/static/img/hex_art.png" alt="cool image">
 			  </div>
 
 		</div>
@@ -20,7 +84,8 @@ layout: home
 	  	<h3 align = "left "> about </h3>
 
 	    <h4 align="left">
-  			{{ site.about | where:"name","eng_bio" }}
+  			<p>Seasoned software and ML engineer with experience in fintech, Bitcoin infrastructure, and machine vision. I have a background as a research mathematician and a proven track record at high-growth startups and major financial technology companies. Expertise in real time machine learning systems, risk management, cryptocurrency systems, and data engineering.</p>
+
 	 	</h4>
 	</div>
 </section>
@@ -36,7 +101,234 @@ layout: home
 	  	<div class="panel panel-default">
 			<div class="panel-body">
 
-			{{ site.cv | where: "format","html" }}
+			<h4>work</h4>
+
+	
+  
+    <article>
+        <header>
+            <h5> <strong>L6 software engineer</strong> at CashApp (Block Inc) </h5>
+            <span>  <address>San Francisco, CA </address> <time>April 2022 - January 2024</time> <br> 
+            <!-- supervisor:  -->
+          </span>
+        </header>
+
+        <p> Worked on the bitcoin custody team, managing hot wallet and Lightning Network infrastructure. Built proof of reserves pipeline and managed critical system during high-fee environments. </p>
+    </article>
+    
+    <article>
+        <header>
+            <h5> <strong>Senior Software Engineer </strong> at Square (Block Inc) </h5>
+            <span>  <address>San Francisco, CA </address> <time>May 2018 - Apr 2022</time> <br> 
+            <!-- supervisor:  -->
+          </span>
+        </header>
+
+        <p> Technical lead for Square Bitcoin Conversions project. Built risk management systems for payments and banking. Collaborated across organization on critical financial infrastructure. </p>
+    </article>
+    
+    <article>
+        <header>
+            <h5> <strong>Machine Learning Engineer</strong> at Coinbase </h5>
+            <span>  <address>San Francisco, CA </address> <time>November 2017 - December 2018</time> <br> 
+            <!-- supervisor: Christian Mladenov -->
+          </span>
+        </header>
+
+        <p> Backend services delivering model predictions and rule evaluations for payments risk, event pipelines, ETL, data warehousing. </p>
+    </article>
+    
+    <article>
+        <header>
+            <h5> <strong>Senior Software Engineer: ML</strong> at Postmates </h5>
+            <span>  <address>San Francisco, CA </address> <time>May 2016 - November 2017</time> <br> 
+            <!-- supervisor: Dr. David Auerbach -->
+          </span>
+        </header>
+
+        <p> Built event-based prediction services for payments fraud, platform abuse, and prep-time estimation.  Worked on systems to train and deploy statistical models, internal services and apis, airflow maintance, ETL jobs, ad hoc analysis, BI table design, and running portions of the interviews for DS and DE candidates. </p>
+    </article>
+    
+    <article>
+        <header>
+            <h5> <strong>Machine Vision Engineer </strong> at UCSF Proctor Foundation </h5>
+            <span>  <address>San Francisco, CA </address> <time>May 2015 - May 2016</time> <br> 
+            <!-- supervisor: Dr. Travis Porco -->
+          </span>
+        </header>
+
+        <p> Worked on a grant funded project to detect Trachoma (an eye infection) in field images. I investigated and developed a collection of machine vision algorithms to classify images of eyelids. I worked with the PI to define the direction of the project and was the principal developer of the grading application. </p>
+    </article>
+    
+    <article>
+        <header>
+            <h5> <strong>Data Scientist</strong> at Argyle Data </h5>
+            <span>  <address>San Mateo, CA </address> <time>June, 2014 - February, 2015</time> <br> 
+            <!-- supervisor: Arshak Navruzyan -->
+          </span>
+        </header>
+
+        <p> I prototyped statistical machine learning algorithms for time series analysis and fraud detection in network data as well as implemented production versions in Java. </p>
+    </article>
+    
+
+
+ <h4> conferences </h4>
+
+   
+      
+
+        <article>
+            <p>  <strong>UAI 2018</strong> at Association for Uncertainty in Artificial Intelligence, Monterey, CA  <time>2018</time>:  Participant
+            </p>
+
+        </article>
+      
+
+        <article>
+            <p>  <strong>Fourth Encuentro Colombiano de Combinatoria</strong> at Universidad de los Andes, Bogota, Colombia  <time>2014</time>:  invited speaker
+            </p>
+
+        </article>
+      
+
+        <article>
+            <p>  <strong>FPSAC</strong> at KAIST, Daejeon, South Korea  <time>2015</time>:  participant
+            </p>
+
+        </article>
+      
+
+        <article>
+            <p>  <strong>Summer Graduate School on Geometric Group Theory</strong> at MSRI, Berkeley, CA, USA  <time>2015</time>:  invited participant
+            </p>
+
+        </article>
+      
+
+        <article>
+            <p>  <strong>Richard Stanley Birthday Conference</strong> at MIT, Cambridge MA, USA  <time>2014</time>:  participant
+            </p>
+
+        </article>
+      
+
+
+
+
+
+
+  <h4> papers/talks </h4>
+    
+  	
+
+	    <article>
+	            <p> <a href=""> <strong> A Characterization of Generalized Permutohedra for the Classical Reflection Groups </strong> </a>,
+	            	2015,
+	            	
+	            	
+	            		(thesis)
+	            	
+	            </p>
+	    </article>
+
+    
+
+	    <article>
+	            <p> <a href="/assets/poster_gen_perm.pdf"> <strong> Generalized W-Permutohedra (poster) </strong> </a>,
+	            	2015,
+	            	
+	            	
+	            		(Poster presented at graduate student showcase.)
+	            	
+	            </p>
+	    </article>
+
+    
+
+	    <article>
+	            <p> <a href="/assets/slides_perm.pdf"> <strong> Generalized W-permutohedra (Talk) </strong> </a>,
+	            	2015,
+	            	
+	            	
+	            		((slides for a talk about the background of my thesis))
+	            	
+	            </p>
+	    </article>
+
+    
+
+	    <article>
+	            <p> <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210463"> <strong> Sensitivity and specificity of computer vision classification of eyelid photographs for programmatic trachoma assessment </strong> </a>,
+	            	2015,
+	            	
+	            		with Dr. Travis Porco and Dr. Kazunori Okada,
+	            	
+	            	
+	            		(UCSF F. I. Proctor Foundation project)
+	            	
+	            </p>
+	    </article>
+
+    
+
+	    <article>
+	            <p> <a href="/assets/free_resolution_of_matroid_ideals.pdf"> <strong> Free resoltuions of matroid ideals </strong> </a>,
+	            	2015,
+	            	
+	            		with Justin Davis,
+	            	
+	            	
+	            </p>
+	    </article>
+
+    
+
+  <h4> education </h4>
+
+    
+    
+	    <article>
+	            <p>  <strong> SFSU, </strong>
+	            	MA,
+	            	Mathematics,
+	            	
+	            	
+	            </p>
+	    </article>
+
+    
+	    <article>
+	            <p>  <strong> University of Paris-1, </strong>
+	            	Visiting Student,
+	            	Philosophy, Logic, Mathematics,
+	            	
+	            	
+	            </p>
+	    </article>
+
+    
+	    <article>
+	            <p>  <strong> SFSU, </strong>
+	            	BA,
+	            	Philosophy, Mathematics, Computer Science,
+	            	
+	            	
+	            </p>
+	    </article>
+
+    
+
+
+  <h4> languages/tools </h4>
+    <article>
+       Python,  Java,  Kotlin,  SQL dialects, 
+      <br>
+       The usual python and ruby frameworks,,  Bitcoin,  Lightning Network,  Keras,  Redshift,  General AWS services, 
+    </article>
+
+
+
 
 			</div>
 		</div>
@@ -53,13 +345,14 @@ layout: home
 	  	<div class="panel panel-default">
 			<div class="panel-body">
 
-				{% for article in site.articles %}
+				
 
-					<p><a href = {{article.address}}> <strong> {{article.title}} </strong>  </a>
+					<p><a href = http://nbviewer.jupyter.org/github/MaCaki/algorithms/blob/master/euler_107/problem_107.ipynb?flush_cache=true> <strong> Seeing the forest for the matroid of trees </strong>  </a>
 					<br>
-					{{ article.summary | markdownify}}  </p>
+					<p>Light introduction to matroids through Kruskall’s algorithm</p>
+  </p>
 
-				{% endfor %}
+				
 
 			</div>
 		</div>
@@ -76,22 +369,127 @@ layout: home
 	  	<div class="panel panel-default">
 			<div class="panel-body">
 
- 				{% assign projects = site.projects | sort: 'number' %}
-				{% for project in projects  %}
-					{% if project.show == true %}
+ 				
+				
+					
 
 						<p> 
-							<h5><strong> {{ project.name }} </strong> at {{project.company}} </h5>
-							{{ project.description | markdownify }} 
+							<h5><strong> Square Bitcoin Conversions </strong> at Block Inc </h5>
+							<p>I created the first integration of CashApp into Square seller accounts, enabling automated and instant transfer of card sale proceeds to CashApp for bitcoin conversion (effectively creating an SMB bitcoin treasury). After recruiting 5-7 engineers from across Block, I guided the project from hackweek through alpha release, culminating in general availability in April 2024.</p>
+
+<p>As the founding engineer, I served as technical lead, project manager, and occasional informal engineering manager. I collaborated closely with both Square and CashApp engineering teams while working with Square leadership to champion the feature’s vision and value, including presenting alongside Block Leadership at the company-wide meeting.
+<a href="https://x.com/jack/status/1783167463645155690">See the tweet</a></p>
+ 
 							<br>
 						</p>
 						
-						{% if project.img %}
-							<img src="{{ site.baseurl }}static/img/{{ project.img }}" alt="project image" style="max-width: 100%; height: auto; margin: 20px 0;">
-						{% endif %}
+						
+							<img src="/static/img/square_bitcoin_savings.png" alt="project image" style="max-width: 100%; height: auto; margin: 20px 0;">
+						
 
-					{% endif %}
-				{% endfor %}
+					
+				
+					
+
+						<p> 
+							<h5><strong> Bitcoin Ephemera </strong> at Inscribing Atlantis </h5>
+							<p>I worked with a digital artist and the lead developer of the ordinal protocol to create and launch a novel auction mechanism for our collection: <a href="https://ephemera.gallery">ephemera.gallery</a>.</p>
+
+<p>We made an attribute generation algorithm that creates unique 3D assets rendered in the inscription using another inscribed JS library.  Ephemeris data from the JPL horizons api was pulled into each inscription and rendered on a funky and beautiful retro display. Users can bid on individual dates to inscribe on the kit.</p>
+
+<p><a href="https://ordinals.com/inscription/f297186c8bd704fd9ea2d5d183930bfe2c4d2b8d4f48a337c9a61100e787599ci0">The Parent Inscription!</a></p>
+ 
+							<br>
+						</p>
+						
+						
+							<img src="/static/img/bitcoin_ephemera.png" alt="project image" style="max-width: 100%; height: auto; margin: 20px 0;">
+						
+
+					
+				
+					
+
+						<p> 
+							<h5><strong> Asynchronous Event Infrastructure </strong> at Coinbase </h5>
+							<p>When I joined Coinbase, there was no system for developers to emit events to downstream event-processing systems. This capability was essential for building next-generation real-time risk assessment and fraud prevention systems. We needed detailed event data from every step of the user flow for both training and evaluation.</p>
+
+<p>I designed and implemented an asynchronous event pipeline using fluentD for the Coinbase monolith, enabling real-time data collection. The solution was lightweight and developer-friendly, significantly expanding our fraud detection capabilities during a period of rapid company growth.</p>
+ 
+							<br>
+						</p>
+						
+						
+
+					
+				
+					
+
+						<p> 
+							<h5><strong> Risk Assessment Service </strong> at Postmates </h5>
+							<p>Designed and built a real-time risk assessment service for Postmates. Using kinesis events, the service makes decisions for every single job on the platform as well as reconstructs customer and merchant data as a network graph.  The service increased the velocity and scope of anti-fraud measures available to the Risk team.</p>
+ 
+							<br>
+						</p>
+						
+						
+
+					
+				
+					
+
+						<p> 
+							<h5><strong> PostGIS to Redshift ETL </strong> at Postmates </h5>
+							<p>Postmates dealt with massive amounts of courier location data. I developed a feature for our core ETL pipeline that extracts geo-spatial data from a PostGIS format and stores it in AWS Redshift-compatible data types. This made vital geospatial data available to analysts for business intelligence.</p>
+ 
+							<br>
+						</p>
+						
+						
+
+					
+				
+					
+
+						<p> 
+							<h5><strong> CNNs to Detect Trachoma </strong> at UCSF </h5>
+							<p>At the UCSF Francis I. Proctor Foundation for Research in Ophthalmology, I designed and implemented an algorithm to classify field photographs of patients’ everted eyelids for trachoma infection. Using transfer learning from a large convolutional neural network, I extracted features to train a classifier that distinguishes between healthy eyelids and those showing follicles and inflammation.</p>
+
+<p><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210463">Resulted in this Paper</a></p>
+ 
+							<br>
+						</p>
+						
+						
+
+					
+				
+					
+
+						<p> 
+							<h5><strong> Counting bloom filter for spam detection </strong> at Argyle Data </h5>
+							<p>I adapted and implemented the counting Bloom filter from the AT&amp;T research paper “Mitigating SMS Spam by Online Detection of Repetitive Near-Duplicate Messages”.  The filter produces  an on-line, probabilistic count of similar text messages in constant memory. Using this I was able to identify mass SMS campaigns and possible fraud in the client’s unlabeled database.</p>
+ 
+							<br>
+						</p>
+						
+						
+
+					
+				
+					
+
+						<p> 
+							<h5><strong> Hidden Markov models for fraud </strong> at Argyle Data </h5>
+							<p>Researched, adapted and implemented a hidden Markov model for fraud detection in a telecommunications data. We trained a one-class classifier for sequential data, which was used for anomaly detection, identifying previously unknown irregularities in customer behavior to the client.</p>
+ 
+							<br>
+						</p>
+						
+						
+
+					
+				
 			</div>
 		</div>
 	</div>
@@ -107,7 +505,10 @@ layout: home
 	  	<div class="panel panel-default">
  			<div class="panel-body"  >
 			    <div id="math_bio">
-					{{ site.about | where:"name","math_bio"}}
+					<p>I am interested in polytopes whose normal fans are related to the classical symmetry groups and submodular functions such as Coxeter matroid polytopes, and generalized permutohedra.</p>
+
+<p>I would like to see how we can use groups and other algebraic structures to describe geometric phenomena, and vice versa. Currently I am trying to see how certain set functions and problems from classical combinatorial optimization can be generalized beyond the Symmetric group.</p>
+
 				</div>
 			 </div>
 		</div>
@@ -127,7 +528,10 @@ layout: home
 				<h4>consulting</h4>
 				<div class="panel-body"  >
 				    <div id="consulting_info">
-						{{ site.about | where:"name","consulting_info" }}
+						<p>I provide consulting and independent contractor work in data engineering, infrastructure, analysis, machine learning systems design, and data strategy.</p>
+
+<p>A well-designed data model and collection strategy is often the key determinant of a data project’s success. This means creating the right schema for your analytical needs while ensuring data warehouse immutability and job idempotency. Through my experience on data teams at high-growth startups, I’ve developed expertise in this detail-oriented work and built effective strategies to manage it. As a machine learning practitioner, I focus on building long-term capabilities to transform data into trained models and create valuable downstream data products.</p>
+
 					</div>
 				 </div>
 
@@ -137,7 +541,28 @@ layout: home
 				<div class="panel-body"  >
 				    <div id="teaching_bio">
 				    	 <a href="/assets/cv_teaching_compiled.pdf" class="active">  Teaching CV </a>
-						{{ site.about | where:"name","teaching_bio" }}
+						<p>I have taught mathematics, statisitics, and computer science in both one on one and classroom settings.
+I can aid with the following subjects:</p>
+
+<ul>
+<li>HS and lower division undergrad math (Algebra, Trig, Geometry, Calc, Stats etc.)</li>
+<li>Linear Algebra</li>
+<li>Probability and Statistics</li>
+<li>Machine learning</li>
+<li>Discrete Mathematics</li>
+<li>Univariate and Multivariate Calculus</li>
+<li>Algorithms</li>
+<li>Software Engineering</li>
+<li>Mock coding interviews</li>
+</ul>
+
+<p>Learning mathematics is hard.  But not any harder than learning music or a new physical 
+skill.  Tutoring meetings should be expected to be high intensity training sessions
+where we establish the framework for self study.  We set the correct expectations for the
+domain of interest as well as workshop a disciplined and appropriately paced curriculum.</p>
+
+<p>Feel free to inquire with questions about your particular study goals.</p>
+
 					</div>
 				 </div>
 
@@ -148,7 +573,54 @@ layout: home
 
 <section id="contact">
 	<div class = "container">
-	 	<h3>Contact me at: {{ site.email }} </h3>
-		  {% include social.html %}
+	 	<h3>Contact me at: m (dot) cadier (dot) kim (at) gmail (dot) com </h3>
+		  <div class="social">
+	<h4>
+    
+	  <a href="http://github.com/macaki"><i class="fa fa-github"></i></a>
+    
+    
+	  <a href="mailto:m (dot) cadier (dot) kim (at) gmail (dot) com"><i class="fa fa-envelope"></i></a>
+    
+
+    
+    
+	  <a href="http://linkedin.com/in/matthew-kim-7350b8208"><i class="fa fa-linkedin"></i></a>
+    
+    
+	</h4>
+</div>
+
 	</div>
 </section>
+
+
+
+
+
+    
+
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div id="footer">
+        <div class="container">
+            <p class="text-muted">© All rights reserved.
+        </div>
+    </div>
+</footer>
+<div class="footer"></div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+    integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+    crossorigin="anonymous"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="/static/js/docs.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
