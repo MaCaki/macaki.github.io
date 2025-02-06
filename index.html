@@ -32,7 +32,7 @@ layout: home
 <section id="cv">
 	<div class="container">
 
-  	<h3 align = "left "> curriculum vitae  <a href="/assets/matthew_kim_2025_cv.pdf" class="active">  pdf </a></h3>
+  	<h3 align = "left "> curriculum vitae <a href="/assets/matthew_kim_2025_cv.pdf" class="active">  pdf </a></h3>
 	  	<div class="panel panel-default">
 			<div class="panel-body">
 
@@ -82,8 +82,8 @@ layout: home
 
 						<p> 
 							<h5><strong> {{ project.name }} </strong> at {{project.company}} </h5>
-							<br>
 							{{ project.description | markdownify }} 
+							<br>
 						</p>
 						
 						{% if project.img %}
@@ -100,7 +100,6 @@ layout: home
 
 <!--  Math stuff   -->
 
-
 <section id="cv">
 	<div class="container">
 
@@ -114,8 +113,9 @@ layout: home
 		</div>
 	</div>
 </section>
-<!--   services (teaching and consulting)   -->
 
+
+<!--   services (teaching and consulting)   -->
 
 <section id="services">
 	<div class="container">
@@ -127,7 +127,7 @@ layout: home
 				<h4>consulting</h4>
 				<div class="panel-body"  >
 				    <div id="consulting_info">
-						{{ site.about | where:"name","consulting_info" | markdownify}}
+						{{ site.about | where:"name","consulting_info" }}
 					</div>
 				 </div>
 
@@ -137,7 +137,7 @@ layout: home
 				<div class="panel-body"  >
 				    <div id="teaching_bio">
 				    	 <a href="/assets/cv_teaching_compiled.pdf" class="active">  Teaching CV </a>
-						{{ site.about | where:"name","teaching_bio" | markdownify}}
+						{{ site.about | where:"name","teaching_bio" }}
 					</div>
 				 </div>
 
@@ -145,9 +145,6 @@ layout: home
 		</div>
 	</div>
 </section>
-
-
-
 
 <section id="contact">
 	<div class = "container">
