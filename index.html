@@ -20,7 +20,7 @@ layout: home
 	  	<h3 align = "left "> about </h3>
 
 	    <h4 align="left">
-  			{{ site.about | where:"name","eng_bio"}}
+  			{{ site.about | where:"name","eng_bio" | markdownify }}
 	 	</h4>
 	</div>
 </section>
@@ -32,7 +32,7 @@ layout: home
 <section id="cv">
 	<div class="container">
 
-  	<h3 align = "left "> curriculum vitae  <a href="/assets/cv_engineering_compiled.pdf" class="active">  pdf </a></h3>
+  	<h3 align = "left "> curriculum vitae  <a href="/assets/matthew_kim_2025_cv.pdf" class="active">  pdf </a></h3>
 	  	<div class="panel panel-default">
 			<div class="panel-body">
 
@@ -57,7 +57,7 @@ layout: home
 
 					<p><a href = {{article.address}}> <strong> {{article.title}} </strong>  </a>
 					<br>
-					{{article.summary}}  </p>
+					{{ article.summary | markdownify}}  </p>
 
 				{% endfor %}
 
@@ -82,8 +82,9 @@ layout: home
 
 						<p> 
 							<h4><strong> {{ project.name }} </strong> at {{project.company}} </h4>
-						<br>
-						{{ project.description }} </p>
+							<br>
+							{{ project.description | markdownify }} 
+						</p>
 
 						
 						{% if project.img %}
@@ -127,7 +128,7 @@ layout: home
 				<h4>consulting</h4>
 				<div class="panel-body"  >
 				    <div id="consulting_info">
-						{{ site.about | where:"name","consulting_info"}}
+						{{ site.about | where:"name","consulting_info" | markdownify}}
 					</div>
 				 </div>
 
@@ -137,7 +138,7 @@ layout: home
 				<div class="panel-body"  >
 				    <div id="teaching_bio">
 				    	 <a href="/assets/cv_teaching_compiled.pdf" class="active">  Teaching CV </a>
-						{{ site.about | where:"name","teaching_bio"}}
+						{{ site.about | where:"name","teaching_bio" | markdownify}}
 					</div>
 				 </div>
 
