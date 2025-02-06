@@ -2,7 +2,9 @@
 layout: content
 show: true
 number : 1
-name: "CNNs to diagnose Trachoma"
-company: " UCSF Francis I. Proctor Foundation for Research in Ophthamology"
-description: "I designed and implemented an algorithm to classify photographs taken in the field of patient's everted eyelids as being infected with trachoma. Features were extracted using transfer learning from a large convolutional neural network and were used to train a classifier that discriminates between healthy eyelids and those with follicles and inflammation. "  
+name: "CNNs to Detect Trachoma"
+company: "UCSF"
+description: "At the UCSF Francis I. Proctor Foundation for Research in Ophthalmology, I designed and implemented an algorithm to classify field photographs of patients' everted eyelids for trachoma infection. Using transfer learning from a large convolutional neural network, I extracted features to train a classifier that distinguishes between healthy eyelids and those showing follicles and inflammation.  
+
+[Resulted in this Paper](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210463)"  
 ---

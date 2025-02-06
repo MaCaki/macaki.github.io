@@ -81,11 +81,10 @@ layout: home
 					{% if project.show == true %}
 
 						<p> 
-							<h4><strong> {{ project.name }} </strong> at {{project.company}} </h4>
+							<h5><strong> {{ project.name }} </strong> at {{project.company}} </h5>
 							<br>
 							{{ project.description | markdownify }} 
 						</p>
-
 						
 						{% if project.img %}
 							<img src="{{ site.baseurl }}static/img/{{ project.img }}" alt="project image" style="max-width: 100%; height: auto; margin: 20px 0;">
