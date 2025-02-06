@@ -2,7 +2,7 @@
 layout: content
 show: true
 number : -2
-name: "Real time event production at Coinbase"
+name: "Asynchronous Event Infrastructure"
 company: "Coinbase"
 description: "When I joined Coinbase, there was no system for developers to emit events to downstream event-processing systems. This capability was essential for building next-generation real-time risk assessment and fraud prevention systems. We needed detailed event data from every step of the user flow for both training and evaluation. 
 
